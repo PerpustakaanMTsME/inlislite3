@@ -1,0 +1,1558 @@
+2022-09-03 10:28:22 [::1][-][gl2ctai3imhbt1e4crtd9fo8d2][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'fopen(http://ip-api.com/json//192.168.1.4): failed to open stream: HTTP request failed! ' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-httpclient\StreamTransport.php:59
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'fopen(http://ip...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-httpclient\StreamTransport.php(59): fopen('http://ip-api.c...', 'rb', false, Resource id #120)
+#2 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-httpclient\Client.php(213): yii\httpclient\StreamTransport->send(Object(yii\httpclient\Request))
+#3 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-httpclient\Request.php(302): yii\httpclient\Client->send(Object(yii\httpclient\Request))
+#4 C:\xampp\htdocs\inlislite3\opac\controllers\SearchController.php(866): yii\httpclient\Request->send()
+#5 [internal function]: opac\controllers\SearchController->actionIndex()
+#6 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('search', Array)
+#10 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\inlislite3\opac\index.php(26): yii\base\Application->run()
+#12 {main}
+2022-09-03 10:28:00 [::1][-][gl2ctai3imhbt1e4crtd9fo8d2][info][application] $_POST = [
+    'catID' => null
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '2j8rltn8c5id70ounevm8gnrq5'
+    '_backendInlislite' => '137db372898e6b08f5a1ec3280edab00e917aecf42c38986ad0869797ad1982ea:2:{i:0;s:17:\"_backendInlislite\";i:1;s:32:\"Ldvf97QESPY5US7qz6OGh4OKFLWdsn8p\";}'
+    '_identity' => 'af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a:2:{i:0;s:9:\"_identity\";i:1;s:17:\"[33,null,2592000]\";}'
+    'guestbook' => 'b539653b9bc433155d75ac8d29a1904f51db1f54237a5b60ee7cbef85a9820d4a:2:{i:0;s:9:\"guestbook\";i:1;s:32:\"NYvKy0xebRJmHrpO0ZPnBPspuAPivam1\";}'
+    'usersSetLocationBukutamu' => 'bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a:2:{i:0;s:24:\"usersSetLocationBukutamu\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'location_Bukutamu_id' => '6c08bddaae5d75e16f1e29c3f6224aa29e7069aaf05b618f324fe5dde7e3bf7fa:2:{i:0;s:20:\"location_Bukutamu_id\";i:1;s:3:\"466\";}'
+    'peminjamanmandiri' => '96616b3380d48e75217b4ef09dc12a12c38f129c0c8a6cfea06c484445e034a0a:2:{i:0;s:17:\"peminjamanmandiri\";i:1;s:32:\"kLjbp77zg6UDNKSGEwvseLzx7pgWQSmq\";}'
+    'usersSetLocPmnjmanMandiri' => '065e40d69c466401dc75589f94fb5f08075801e0688062abf7e6eb9ab99e33ffa:2:{i:0;s:25:\"usersSetLocPmnjmanMandiri\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'usersIDPmnjmanMandiri' => 'bc09e52d8ee485a6c264d1701382fe3df40df3416ba73a9169101b2cd7cc7182a:2:{i:0;s:21:\"usersIDPmnjmanMandiri\";i:1;i:33;}'
+    'location_peminjamanmandiri_id' => 'e91f4a807d968808a6080b66e8caabba5d77d15ac512f5d249008abe18731696a:2:{i:0;s:29:\"location_peminjamanmandiri_id\";i:1;s:3:\"466\";}'
+    'location_detail_peminjamanmandiri' => '370127ec58a9e533ebac87a96afbe1b6d00f959bc21604f307123eab1772c3e3a:2:{i:0;s:33:\"location_detail_peminjamanmandiri\";i:1;a:4:{s:4:\"Name\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:7:\"MTSN1ME\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'backendSession' => 'cik5agihp4b0f6hmroe2cffip1'
+    'usersSetLocation' => '5e07e618364a00016f4ab40907dfcba52422f611b104c744112e902061ba2c20a:2:{i:0;s:16:\"usersSetLocation\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'location_id' => '3dbabb4b39d2308ad5649865b1f123908826cc6064686344acc30fca7d8e14a1a:2:{i:0;s:11:\"location_id\";i:1;s:3:\"466\";}'
+    'location_detail' => 'ff0a07f480a0001e1792001171cda8c85853814a20093f6471aa5fed21a73f18a:2:{i:0;s:15:\"location_detail\";i:1;a:4:{s:4:\"Name\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:7:\"MTSN1ME\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'memInfo' => '346a54086e752450f6692f9fbeca90cb0290a315017e34789811c70319c7f6d5a:2:{i:0;s:7:\"memInfo\";i:1;a:5:{s:4:\"type\";s:6:\"member\";s:4:\"name\";s:13:\"LIMAS PRATAMA\";s:8:\"verified\";b:1;s:2:\"id\";d:1;s:8:\"PhotoUrl\";N;}}'
+    'bookHistory' => '2d754fd945a970902f556d0b7dcc86f8013889e37bad98355dd48febf3151d7da:2:{i:0;s:11:\"bookHistory\";i:1;a:0:{}}'
+    '_csrf' => '69671b874b9a02da85312b40844a8a0098549b7a09170f2b443919c414737599a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q09qoEaGukoMQRa2koO1LbzpyhHIOVyJ\";}'
+    'keanggotaanSession' => 'gl2ctai3imhbt1e4crtd9fo8d2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'catID' => null
+    'catIDmerge' => null
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8123'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_REFERER' => 'http://localhost:8123/inlislite3/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=2j8rltn8c5id70ounevm8gnrq5; _backendInlislite=137db372898e6b08f5a1ec3280edab00e917aecf42c38986ad0869797ad1982ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_backendInlislite%22%3Bi%3A1%3Bs%3A32%3A%22Ldvf97QESPY5US7qz6OGh4OKFLWdsn8p%22%3B%7D; _identity=af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B33%2Cnull%2C2592000%5D%22%3B%7D; guestbook=b539653b9bc433155d75ac8d29a1904f51db1f54237a5b60ee7cbef85a9820d4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22guestbook%22%3Bi%3A1%3Bs%3A32%3A%22NYvKy0xebRJmHrpO0ZPnBPspuAPivam1%22%3B%7D; usersSetLocationBukutamu=bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a%3A2%3A%7Bi%3A0%3Bs%3A24%3A%22usersSetLocationBukutamu%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; location_Bukutamu_id=6c08bddaae5d75e16f1e29c3f6224aa29e7069aaf05b618f324fe5dde7e3bf7fa%3A2%3A%7Bi%3A0%3Bs%3A20%3A%22location_Bukutamu_id%22%3Bi%3A1%3Bs%3A3%3A%22466%22%3B%7D; peminjamanmandiri=96616b3380d48e75217b4ef09dc12a12c38f129c0c8a6cfea06c484445e034a0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22peminjamanmandiri%22%3Bi%3A1%3Bs%3A32%3A%22kLjbp77zg6UDNKSGEwvseLzx7pgWQSmq%22%3B%7D; usersSetLocPmnjmanMandiri=065e40d69c466401dc75589f94fb5f08075801e0688062abf7e6eb9ab99e33ffa%3A2%3A%7Bi%3A0%3Bs%3A25%3A%22usersSetLocPmnjmanMandiri%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; usersIDPmnjmanMandiri=bc09e52d8ee485a6c264d1701382fe3df40df3416ba73a9169101b2cd7cc7182a%3A2%3A%7Bi%3A0%3Bs%3A21%3A%22usersIDPmnjmanMandiri%22%3Bi%3A1%3Bi%3A33%3B%7D; location_peminjamanmandiri_id=e91f4a807d968808a6080b66e8caabba5d77d15ac512f5d249008abe18731696a%3A2%3A%7Bi%3A0%3Bs%3A29%3A%22location_peminjamanmandiri_id%22%3Bi%3A1%3Bs%3A3%3A%22466%22%3B%7D; location_detail_peminjamanmandiri=370127ec58a9e533ebac87a96afbe1b6d00f959bc21604f307123eab1772c3e3a%3A2%3A%7Bi%3A0%3Bs%3A33%3A%22location_detail_peminjamanmandiri%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A7%3A%22MTSN1ME%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; backendSession=cik5agihp4b0f6hmroe2cffip1; usersSetLocation=5e07e618364a00016f4ab40907dfcba52422f611b104c744112e902061ba2c20a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22usersSetLocation%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; location_id=3dbabb4b39d2308ad5649865b1f123908826cc6064686344acc30fca7d8e14a1a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22location_id%22%3Bi%3A1%3Bs%3A3%3A%22466%22%3B%7D; location_detail=ff0a07f480a0001e1792001171cda8c85853814a20093f6471aa5fed21a73f18a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22location_detail%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A7%3A%22MTSN1ME%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; memInfo=346a54086e752450f6692f9fbeca90cb0290a315017e34789811c70319c7f6d5a%3A2%3A%7Bi%3A0%3Bs%3A7%3A%22memInfo%22%3Bi%3A1%3Ba%3A5%3A%7Bs%3A4%3A%22type%22%3Bs%3A6%3A%22member%22%3Bs%3A4%3A%22name%22%3Bs%3A13%3A%22LIMAS+PRATAMA%22%3Bs%3A8%3A%22verified%22%3Bb%3A1%3Bs%3A2%3A%22id%22%3Bd%3A1%3Bs%3A8%3A%22PhotoUrl%22%3BN%3B%7D%7D; bookHistory=2d754fd945a970902f556d0b7dcc86f8013889e37bad98355dd48febf3151d7da%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22bookHistory%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; _csrf=69671b874b9a02da85312b40844a8a0098549b7a09170f2b443919c414737599a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q09qoEaGukoMQRa2koO1LbzpyhHIOVyJ%22%3B%7D; keanggotaanSession=gl2ctai3imhbt1e4crtd9fo8d2'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 8123</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8123'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/opac/index.php'
+    'REMOTE_PORT' => '57275'
+    'REDIRECT_URL' => 'http://localhost:8123/inlislite3/opac/search'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/inlislite3/opac/search'
+    'SCRIPT_NAME' => '/inlislite3/opac/index.php'
+    'PHP_SELF' => '/inlislite3/opac/index.php'
+    'REQUEST_TIME_FLOAT' => 1662175680.497
+    'REQUEST_TIME' => 1662175680
+]
+2022-09-07 14:33:50 [::1][-][5q2naugjs96fguvmn3odjf96g7][error][yii\elasticsearch\Exception] exception 'yii\elasticsearch\Exception' with message 'Elasticsearch request failed: 7 - Failed to connect to 127.0.0.1 port 9200: Connection refused' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php:503
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(176): yii\elasticsearch\Connection->httpRequest('GET', 'http://127.0.0....')
+#1 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(155): yii\elasticsearch\Connection->populateNodes()
+#2 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(257): yii\elasticsearch\Connection->open()
+#3 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Query.php(218): yii\elasticsearch\Connection->createCommand(Array)
+#4 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Query.php(401): yii\elasticsearch\Query->createCommand(NULL)
+#5 C:\xampp\htdocs\inlislite3\opac\controllers\SearchController.php(428): yii\elasticsearch\Query->count()
+#6 [internal function]: opac\controllers\SearchController->actionIndex()
+#7 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#10 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('search/index', Array)
+#11 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\inlislite3\opac\index.php(26): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [requestMethod] => GET
+    [requestUrl] => http://127.0.0.1:9200/_nodes/_all/http
+    [requestBody] => 
+    [responseHeaders] => Array
+        (
+        )
+
+    [responseBody] => 
+)
+
+2022-09-07 14:33:48 [::1][-][5q2naugjs96fguvmn3odjf96g7][info][application] $_GET = [
+    'action' => 'pencarianSederhana'
+    'katakunci' => 'Penyebab'
+    'ruas' => 'Judul'
+    'bahan' => 'Semua Jenis Bahan'
+]
+
+$_COOKIE = [
+    '_identity' => 'af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a:2:{i:0;s:9:\"_identity\";i:1;s:17:\"[33,null,2592000]\";}'
+    'PHPSESSID' => '7j2pglt1e9582s37r09bpddds4'
+    '_csrf' => '819e3d8da28cc96da0da90554489ff58ce9b89035f768996d3336243e2ad196aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xYBH25HnV-UOYGoVs7FB1kHrF6NRpeRH\";}'
+    '_backendInlislite' => 'ff86ff038f156f8d2302558afd6c9d09662feed67a73920573dcb4663f208866a:2:{i:0;s:17:\"_backendInlislite\";i:1;s:32:\"NNyTpQ3znfXKoVylD6hIZlOGG3WS3U0y\";}'
+    'backendSession' => 'tu7iqn6ec38sql89k731fong92'
+    'keanggotaanSession' => '5q2naugjs96fguvmn3odjf96g7'
+    '_OpacInlislite' => 'e56273ad542bee74cc5e2a6e09e47a524723121d18fa9420d9df4071eb2a204aa:2:{i:0;s:14:\"_OpacInlislite\";i:1;s:32:\"8QJ7_7w6FfMJYM0M2jdVms-SbgMLfWSK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'catID' => null
+    'catIDmerge' => null
+    '__returnUrl' => '/inlislite3/opac/search'
+    'RiwayatPencarian' => [
+        0 => [
+            'ip' => '192.168.1.72'
+            'url' => 'http://localhost:8123/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=Penyebab&ruas=Judul&bahan=Semua+Jenis+Bahan'
+            'action' => 'pencarianSederhana'
+            'keyword' => 'Judul = Penyebab'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '09-07-2022 14:33:48'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8123'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8123/inlislite3/opac/search'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B33%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=7j2pglt1e9582s37r09bpddds4; _csrf=819e3d8da28cc96da0da90554489ff58ce9b89035f768996d3336243e2ad196aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xYBH25HnV-UOYGoVs7FB1kHrF6NRpeRH%22%3B%7D; _backendInlislite=ff86ff038f156f8d2302558afd6c9d09662feed67a73920573dcb4663f208866a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_backendInlislite%22%3Bi%3A1%3Bs%3A32%3A%22NNyTpQ3znfXKoVylD6hIZlOGG3WS3U0y%22%3B%7D; backendSession=tu7iqn6ec38sql89k731fong92; keanggotaanSession=5q2naugjs96fguvmn3odjf96g7; _OpacInlislite=e56273ad542bee74cc5e2a6e09e47a524723121d18fa9420d9df4071eb2a204aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_OpacInlislite%22%3Bi%3A1%3Bs%3A32%3A%228QJ7_7w6FfMJYM0M2jdVms-SbgMLfWSK%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 8123</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8123'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/opac/index.php'
+    'REMOTE_PORT' => '57894'
+    'REDIRECT_QUERY_STRING' => 'action=pencarianSederhana&katakunci=Penyebab&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'REDIRECT_URL' => 'http://localhost:8123/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=Penyebab&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'action=pencarianSederhana&katakunci=Penyebab&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'REQUEST_URI' => '/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=Penyebab&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'SCRIPT_NAME' => '/inlislite3/opac/index.php'
+    'PHP_SELF' => '/inlislite3/opac/index.php'
+    'REQUEST_TIME_FLOAT' => 1662536028.002
+    'REQUEST_TIME' => 1662536028
+]
+2022-11-12 14:10:08 [::1][-][jq2caa01km2d5ekrocmm3qnep1][error][yii\elasticsearch\Exception] exception 'yii\elasticsearch\Exception' with message 'Elasticsearch request failed: 7 - Failed to connect to 127.0.0.1 port 9200: Connection refused' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php:503
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(176): yii\elasticsearch\Connection->httpRequest('GET', 'http://127.0.0....')
+#1 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(155): yii\elasticsearch\Connection->populateNodes()
+#2 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(257): yii\elasticsearch\Connection->open()
+#3 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Query.php(218): yii\elasticsearch\Connection->createCommand(Array)
+#4 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Query.php(401): yii\elasticsearch\Query->createCommand(NULL)
+#5 C:\xampp\htdocs\inlislite3\opac\controllers\SearchController.php(428): yii\elasticsearch\Query->count()
+#6 [internal function]: opac\controllers\SearchController->actionIndex()
+#7 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#10 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('search/index', Array)
+#11 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\inlislite3\opac\index.php(26): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [requestMethod] => GET
+    [requestUrl] => http://127.0.0.1:9200/_nodes/_all/http
+    [requestBody] => 
+    [responseHeaders] => Array
+        (
+        )
+
+    [responseBody] => 
+)
+
+2022-11-12 14:10:05 [::1][-][jq2caa01km2d5ekrocmm3qnep1][info][application] $_GET = [
+    'action' => 'pencarianSederhana'
+    'katakunci' => 'Penyebab'
+    'ruas' => 'Judul'
+    'bahan' => 'Semua Jenis Bahan'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'a20chqtaa9qgh95t13g60epk05'
+    '_csrf' => 'f97a10765865fa3d74f3d678dad9f0ad1a4a6046b779ce210736776eb72ba95da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"82qIh1QkWie4BNu6CG8NmnO2t5sw96eF\";}'
+    '_backendInlislite' => 'bddeaf7954303ae7df965b09d8c2d9b1744a019f83ae25ff8efa0c7ba7d144e0a:2:{i:0;s:17:\"_backendInlislite\";i:1;s:32:\"COFXDoV6jXJkuNHrsT1IPy0ja1RZhoHZ\";}'
+    'backendSession' => '0a0hu3ep2h573rooq225n732e3'
+    '_identity' => 'af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a:2:{i:0;s:9:\"_identity\";i:1;s:17:\"[33,null,2592000]\";}'
+    'keanggotaanSession' => 'jq2caa01km2d5ekrocmm3qnep1'
+    '_OpacInlislite' => '2455e6b5ad0a5cf03f7c41fa44234dbb8718382ccb9dc600a3a3c2a5cb8d16c3a:2:{i:0;s:14:\"_OpacInlislite\";i:1;s:32:\"ZCyxZOpCqfbrYSZSXeoRNPj_HG1PTedq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'catID' => null
+    'catIDmerge' => null
+    '__returnUrl' => '/inlislite3/opac/search'
+    'RiwayatPencarian' => [
+        0 => [
+            'ip' => '10.10.13.72'
+            'url' => 'http://localhost:8123/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=Penyebab&ruas=Judul&bahan=Semua+Jenis+Bahan'
+            'action' => 'pencarianSederhana'
+            'keyword' => 'Judul = Penyebab'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '11-12-2022 14:10:05'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8123'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8123/inlislite3/opac/search'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=a20chqtaa9qgh95t13g60epk05; _csrf=f97a10765865fa3d74f3d678dad9f0ad1a4a6046b779ce210736776eb72ba95da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2282qIh1QkWie4BNu6CG8NmnO2t5sw96eF%22%3B%7D; _backendInlislite=bddeaf7954303ae7df965b09d8c2d9b1744a019f83ae25ff8efa0c7ba7d144e0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_backendInlislite%22%3Bi%3A1%3Bs%3A32%3A%22COFXDoV6jXJkuNHrsT1IPy0ja1RZhoHZ%22%3B%7D; backendSession=0a0hu3ep2h573rooq225n732e3; _identity=af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B33%2Cnull%2C2592000%5D%22%3B%7D; keanggotaanSession=jq2caa01km2d5ekrocmm3qnep1; _OpacInlislite=2455e6b5ad0a5cf03f7c41fa44234dbb8718382ccb9dc600a3a3c2a5cb8d16c3a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_OpacInlislite%22%3Bi%3A1%3Bs%3A32%3A%22ZCyxZOpCqfbrYSZSXeoRNPj_HG1PTedq%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 8123</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8123'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/opac/index.php'
+    'REMOTE_PORT' => '51856'
+    'REDIRECT_QUERY_STRING' => 'action=pencarianSederhana&katakunci=Penyebab&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'REDIRECT_URL' => 'http://localhost:8123/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=Penyebab&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'action=pencarianSederhana&katakunci=Penyebab&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'REQUEST_URI' => '/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=Penyebab&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'SCRIPT_NAME' => '/inlislite3/opac/index.php'
+    'PHP_SELF' => '/inlislite3/opac/index.php'
+    'REQUEST_TIME_FLOAT' => 1668237005.495
+    'REQUEST_TIME' => 1668237005
+]
+2023-06-26 09:08:36 [::1][-][2eguoii9tb4lvjdhpipp1cu3c6][error][yii\elasticsearch\Exception] exception 'yii\elasticsearch\Exception' with message 'Elasticsearch request failed: 7 - Failed to connect to 127.0.0.1 port 9200: Connection refused' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php:503
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(176): yii\elasticsearch\Connection->httpRequest('GET', 'http://127.0.0....')
+#1 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(155): yii\elasticsearch\Connection->populateNodes()
+#2 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(257): yii\elasticsearch\Connection->open()
+#3 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Query.php(218): yii\elasticsearch\Connection->createCommand(Array)
+#4 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Query.php(401): yii\elasticsearch\Query->createCommand(NULL)
+#5 C:\xampp\htdocs\inlislite3\opac\controllers\SearchController.php(428): yii\elasticsearch\Query->count()
+#6 [internal function]: opac\controllers\SearchController->actionIndex()
+#7 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#10 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('search/index', Array)
+#11 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\inlislite3\opac\index.php(26): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [requestMethod] => GET
+    [requestUrl] => http://127.0.0.1:9200/_nodes/_all/http
+    [requestBody] => 
+    [responseHeaders] => Array
+        (
+        )
+
+    [responseBody] => 
+)
+
+2023-06-26 09:08:33 [::1][-][2eguoii9tb4lvjdhpipp1cu3c6][info][application] $_GET = [
+    'action' => 'pencarianSederhana'
+    'katakunci' => 'shalat'
+    'ruas' => 'Judul'
+    'bahan' => 'Semua Jenis Bahan'
+]
+
+$_COOKIE = [
+    '_identity' => 'af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a:2:{i:0;s:9:\"_identity\";i:1;s:17:\"[33,null,2592000]\";}'
+    'PHPSESSID' => '49376v1gj6c63oh3inoavnrvi5'
+    '_csrf' => '242579b6352e80e8f362b9eaec0e85dfc1d55381db3bc1f116f7202ccb23be81a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mNeX1UVUeQYlcMv038s3BLFBoahEU2n2\";}'
+    '_backendInlislite' => 'c691086defc13cf8f7175e2400e5121bb60a563c9d1c3fb8c2d3751ebaeda6afa:2:{i:0;s:17:\"_backendInlislite\";i:1;s:32:\"Egag6BEoHyv0OtELbDHikKCNI_5koQkx\";}'
+    'guestbook' => '0fa54f94e231330b6508367e298ceaca5c64464c7b545da32692c2f2f1535e8fa:2:{i:0;s:9:\"guestbook\";i:1;s:32:\"ApfdENdk9UsibLK9cfze7djVAmdLXs5W\";}'
+    'usersSetLocationBukutamu' => 'bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a:2:{i:0;s:24:\"usersSetLocationBukutamu\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'location_Bukutamu_id' => 'cd550d7931a1b5e8698ce1993423a81b0814640680bf24b965839648e45e8da2a:2:{i:0;s:20:\"location_Bukutamu_id\";i:1;s:3:\"473\";}'
+    'location_detail' => '7c034c17a6edbf6de67142042dc2e75b8209b4b6a5ec865266227cf8514c2c82a:2:{i:0;s:15:\"location_detail\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'pengembalianmandiri' => '0ba2e2aa3e75234a34f169e267c13c6bea54324666dd75692ccccb02032ce554a:2:{i:0;s:19:\"pengembalianmandiri\";i:1;s:32:\"2m9jl8yGerOiL6o0G-NYwxA79ghgwL_K\";}'
+    'usersSetLocPngblianMandiri' => '23612243f67b5837260b989a9ad4daf15e7135045011ba52d99bc8184faf8353a:2:{i:0;s:26:\"usersSetLocPngblianMandiri\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'usersIDPngblianMandiri' => '7037f043fe2377f6dd8ab9d27d90ce1b3d3f51e35d5272821ca4560bf5288b4ea:2:{i:0;s:22:\"usersIDPngblianMandiri\";i:1;i:33;}'
+    'location_pengembalianmandiri_id' => '2ae7e23eb0e7634b685e5c1abe17b9a7653b07fe733b2314025ec2f11832453ca:2:{i:0;s:31:\"location_pengembalianmandiri_id\";i:1;s:3:\"473\";}'
+    'location_detail_pengembalianmandiri' => 'ea44f75bcece8e55ecfcc06a7135bedca8b9324b763c110af9ab3244c118f9f3a:2:{i:0;s:35:\"location_detail_pengembalianmandiri\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'peminjamanmandiri' => '42b346d0c0bf715d380a3726882f31fc4006a289f5662f7b58b9ba0fb7a3885ca:2:{i:0;s:17:\"peminjamanmandiri\";i:1;s:32:\"vd_fCJLj_VTBwk7fMyNXKUUedJS6-7yz\";}'
+    'usersSetLocPmnjmanMandiri' => '065e40d69c466401dc75589f94fb5f08075801e0688062abf7e6eb9ab99e33ffa:2:{i:0;s:25:\"usersSetLocPmnjmanMandiri\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'usersIDPmnjmanMandiri' => 'bc09e52d8ee485a6c264d1701382fe3df40df3416ba73a9169101b2cd7cc7182a:2:{i:0;s:21:\"usersIDPmnjmanMandiri\";i:1;i:33;}'
+    'location_peminjamanmandiri_id' => '83b2b1f1141321217bdeab15888672498246506af17ff4be7f43ba0263ea8564a:2:{i:0;s:29:\"location_peminjamanmandiri_id\";i:1;s:3:\"473\";}'
+    'location_detail_peminjamanmandiri' => '132071fb73842df63024a0530c31f1133dfedb72324f24e548e668286a24ea12a:2:{i:0;s:33:\"location_detail_peminjamanmandiri\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'backendSession' => 'b5ot72tvf6ahj6mm84u4gca866'
+    'keanggotaanSession' => '2eguoii9tb4lvjdhpipp1cu3c6'
+    '_OpacInlislite' => '0c5d92cd2a1803289ae270c6f0ae9e99c080695bf7538015be79e5f594004ca5a:2:{i:0;s:14:\"_OpacInlislite\";i:1;s:32:\"Ocgf8hhyyLVSrR5jmOdVZnQdgpLnehDG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'catID' => null
+    'catIDmerge' => null
+    '__returnUrl' => '/inlislite3/opac/search'
+    'RiwayatPencarian' => [
+        0 => [
+            'ip' => '192.168.1.10'
+            'url' => 'http://localhost:8123/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=shalat&ruas=Judul&bahan=Semua+Jenis+Bahan'
+            'action' => 'pencarianSederhana'
+            'keyword' => 'Judul = shalat'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '06-26-2023 09:08:34'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8123'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8123/inlislite3/opac/search'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_identity=af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B33%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=49376v1gj6c63oh3inoavnrvi5; _csrf=242579b6352e80e8f362b9eaec0e85dfc1d55381db3bc1f116f7202ccb23be81a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mNeX1UVUeQYlcMv038s3BLFBoahEU2n2%22%3B%7D; _backendInlislite=c691086defc13cf8f7175e2400e5121bb60a563c9d1c3fb8c2d3751ebaeda6afa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_backendInlislite%22%3Bi%3A1%3Bs%3A32%3A%22Egag6BEoHyv0OtELbDHikKCNI_5koQkx%22%3B%7D; guestbook=0fa54f94e231330b6508367e298ceaca5c64464c7b545da32692c2f2f1535e8fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22guestbook%22%3Bi%3A1%3Bs%3A32%3A%22ApfdENdk9UsibLK9cfze7djVAmdLXs5W%22%3B%7D; usersSetLocationBukutamu=bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a%3A2%3A%7Bi%3A0%3Bs%3A24%3A%22usersSetLocationBukutamu%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; location_Bukutamu_id=cd550d7931a1b5e8698ce1993423a81b0814640680bf24b965839648e45e8da2a%3A2%3A%7Bi%3A0%3Bs%3A20%3A%22location_Bukutamu_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail=7c034c17a6edbf6de67142042dc2e75b8209b4b6a5ec865266227cf8514c2c82a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22location_detail%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; pengembalianmandiri=0ba2e2aa3e75234a34f169e267c13c6bea54324666dd75692ccccb02032ce554a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22pengembalianmandiri%22%3Bi%3A1%3Bs%3A32%3A%222m9jl8yGerOiL6o0G-NYwxA79ghgwL_K%22%3B%7D; usersSetLocPngblianMandiri=23612243f67b5837260b989a9ad4daf15e7135045011ba52d99bc8184faf8353a%3A2%3A%7Bi%3A0%3Bs%3A26%3A%22usersSetLocPngblianMandiri%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; usersIDPngblianMandiri=7037f043fe2377f6dd8ab9d27d90ce1b3d3f51e35d5272821ca4560bf5288b4ea%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22usersIDPngblianMandiri%22%3Bi%3A1%3Bi%3A33%3B%7D; location_pengembalianmandiri_id=2ae7e23eb0e7634b685e5c1abe17b9a7653b07fe733b2314025ec2f11832453ca%3A2%3A%7Bi%3A0%3Bs%3A31%3A%22location_pengembalianmandiri_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail_pengembalianmandiri=ea44f75bcece8e55ecfcc06a7135bedca8b9324b763c110af9ab3244c118f9f3a%3A2%3A%7Bi%3A0%3Bs%3A35%3A%22location_detail_pengembalianmandiri%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; peminjamanmandiri=42b346d0c0bf715d380a3726882f31fc4006a289f5662f7b58b9ba0fb7a3885ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22peminjamanmandiri%22%3Bi%3A1%3Bs%3A32%3A%22vd_fCJLj_VTBwk7fMyNXKUUedJS6-7yz%22%3B%7D; usersSetLocPmnjmanMandiri=065e40d69c466401dc75589f94fb5f08075801e0688062abf7e6eb9ab99e33ffa%3A2%3A%7Bi%3A0%3Bs%3A25%3A%22usersSetLocPmnjmanMandiri%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; usersIDPmnjmanMandiri=bc09e52d8ee485a6c264d1701382fe3df40df3416ba73a9169101b2cd7cc7182a%3A2%3A%7Bi%3A0%3Bs%3A21%3A%22usersIDPmnjmanMandiri%22%3Bi%3A1%3Bi%3A33%3B%7D; location_peminjamanmandiri_id=83b2b1f1141321217bdeab15888672498246506af17ff4be7f43ba0263ea8564a%3A2%3A%7Bi%3A0%3Bs%3A29%3A%22location_peminjamanmandiri_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail_peminjamanmandiri=132071fb73842df63024a0530c31f1133dfedb72324f24e548e668286a24ea12a%3A2%3A%7Bi%3A0%3Bs%3A33%3A%22location_detail_peminjamanmandiri%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; backendSession=b5ot72tvf6ahj6mm84u4gca866; keanggotaanSession=2eguoii9tb4lvjdhpipp1cu3c6; _OpacInlislite=0c5d92cd2a1803289ae270c6f0ae9e99c080695bf7538015be79e5f594004ca5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_OpacInlislite%22%3Bi%3A1%3Bs%3A32%3A%22Ocgf8hhyyLVSrR5jmOdVZnQdgpLnehDG%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 8123</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8123'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/opac/index.php'
+    'REMOTE_PORT' => '52543'
+    'REDIRECT_QUERY_STRING' => 'action=pencarianSederhana&katakunci=shalat&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'REDIRECT_URL' => 'http://localhost:8123/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=shalat&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'action=pencarianSederhana&katakunci=shalat&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'REQUEST_URI' => '/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=shalat&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'SCRIPT_NAME' => '/inlislite3/opac/index.php'
+    'PHP_SELF' => '/inlislite3/opac/index.php'
+    'REQUEST_TIME_FLOAT' => 1687745313.721
+    'REQUEST_TIME' => 1687745313
+]
+2023-06-26 09:53:28 [::1][-][2eguoii9tb4lvjdhpipp1cu3c6][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Maaf Data Yang anda cari tidak ditemukan' in C:\xampp\htdocs\inlislite3\opac\controllers\DetailOpacController.php:746
+Stack trace:
+#0 [internal function]: opac\controllers\DetailOpacController->actionIndex()
+#1 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#4 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('detail-opac', Array)
+#5 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\inlislite3\opac\index.php(26): yii\base\Application->run()
+#7 {main}
+2023-06-26 09:53:27 [::1][-][2eguoii9tb4lvjdhpipp1cu3c6][info][application] $_GET = [
+    'action' => 'logDownload'
+    'ID' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => 'af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a:2:{i:0;s:9:\"_identity\";i:1;s:17:\"[33,null,2592000]\";}'
+    'PHPSESSID' => '49376v1gj6c63oh3inoavnrvi5'
+    '_csrf' => '242579b6352e80e8f362b9eaec0e85dfc1d55381db3bc1f116f7202ccb23be81a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mNeX1UVUeQYlcMv038s3BLFBoahEU2n2\";}'
+    '_backendInlislite' => 'c691086defc13cf8f7175e2400e5121bb60a563c9d1c3fb8c2d3751ebaeda6afa:2:{i:0;s:17:\"_backendInlislite\";i:1;s:32:\"Egag6BEoHyv0OtELbDHikKCNI_5koQkx\";}'
+    'guestbook' => '0fa54f94e231330b6508367e298ceaca5c64464c7b545da32692c2f2f1535e8fa:2:{i:0;s:9:\"guestbook\";i:1;s:32:\"ApfdENdk9UsibLK9cfze7djVAmdLXs5W\";}'
+    'usersSetLocationBukutamu' => 'bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a:2:{i:0;s:24:\"usersSetLocationBukutamu\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'location_Bukutamu_id' => 'cd550d7931a1b5e8698ce1993423a81b0814640680bf24b965839648e45e8da2a:2:{i:0;s:20:\"location_Bukutamu_id\";i:1;s:3:\"473\";}'
+    'location_detail' => '7c034c17a6edbf6de67142042dc2e75b8209b4b6a5ec865266227cf8514c2c82a:2:{i:0;s:15:\"location_detail\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'pengembalianmandiri' => '0ba2e2aa3e75234a34f169e267c13c6bea54324666dd75692ccccb02032ce554a:2:{i:0;s:19:\"pengembalianmandiri\";i:1;s:32:\"2m9jl8yGerOiL6o0G-NYwxA79ghgwL_K\";}'
+    'usersSetLocPngblianMandiri' => '23612243f67b5837260b989a9ad4daf15e7135045011ba52d99bc8184faf8353a:2:{i:0;s:26:\"usersSetLocPngblianMandiri\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'usersIDPngblianMandiri' => '7037f043fe2377f6dd8ab9d27d90ce1b3d3f51e35d5272821ca4560bf5288b4ea:2:{i:0;s:22:\"usersIDPngblianMandiri\";i:1;i:33;}'
+    'location_pengembalianmandiri_id' => '2ae7e23eb0e7634b685e5c1abe17b9a7653b07fe733b2314025ec2f11832453ca:2:{i:0;s:31:\"location_pengembalianmandiri_id\";i:1;s:3:\"473\";}'
+    'location_detail_pengembalianmandiri' => 'ea44f75bcece8e55ecfcc06a7135bedca8b9324b763c110af9ab3244c118f9f3a:2:{i:0;s:35:\"location_detail_pengembalianmandiri\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'peminjamanmandiri' => '42b346d0c0bf715d380a3726882f31fc4006a289f5662f7b58b9ba0fb7a3885ca:2:{i:0;s:17:\"peminjamanmandiri\";i:1;s:32:\"vd_fCJLj_VTBwk7fMyNXKUUedJS6-7yz\";}'
+    'usersSetLocPmnjmanMandiri' => '065e40d69c466401dc75589f94fb5f08075801e0688062abf7e6eb9ab99e33ffa:2:{i:0;s:25:\"usersSetLocPmnjmanMandiri\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'usersIDPmnjmanMandiri' => 'bc09e52d8ee485a6c264d1701382fe3df40df3416ba73a9169101b2cd7cc7182a:2:{i:0;s:21:\"usersIDPmnjmanMandiri\";i:1;i:33;}'
+    'location_peminjamanmandiri_id' => '83b2b1f1141321217bdeab15888672498246506af17ff4be7f43ba0263ea8564a:2:{i:0;s:29:\"location_peminjamanmandiri_id\";i:1;s:3:\"473\";}'
+    'location_detail_peminjamanmandiri' => '132071fb73842df63024a0530c31f1133dfedb72324f24e548e668286a24ea12a:2:{i:0;s:33:\"location_detail_peminjamanmandiri\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'backendSession' => 'b5ot72tvf6ahj6mm84u4gca866'
+    'keanggotaanSession' => '2eguoii9tb4lvjdhpipp1cu3c6'
+    '_OpacInlislite' => '0c5d92cd2a1803289ae270c6f0ae9e99c080695bf7538015be79e5f594004ca5a:2:{i:0;s:14:\"_OpacInlislite\";i:1;s:32:\"Ocgf8hhyyLVSrR5jmOdVZnQdgpLnehDG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'RiwayatPencarian' => [
+        0 => [
+            'ip' => '192.168.1.10'
+            'url' => 'http://localhost:8123/inlislite3/opac/pencarian-lanjut?action=pencarianLanjut&bahan=Semua+Jenis+Bahan&bahasa=&action=pencarianLanjut&targetPembaca=&bentukKarya=&katakunci%5B%5D=perempuan&jenis%5B%5D=di+dalam&tag%5B%5D=Judul'
+            'action' => 'pencarianLanjut'
+            'keyword' => 'Judul di dalam = perempuan'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '06-26-2023 09:53:07'
+        ]
+    ]
+    'countSearch' => '1'
+    'dataFacedAuthor' => [
+        0 => [
+            'Author' => 'Tetty Yukesti'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedPublisher' => [
+        0 => [
+            'Publisher' => 'Elex Media Komputindo,'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedPublishLocation' => [
+        0 => [
+            'PublishLocation' => 'Jakarta :'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedPublishYear' => [
+        0 => [
+            'PublishYear' => '2015'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedSubject' => [
+        0 => [
+            'SUBJECT' => 'Wanita - Biografi'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedBahasa' => [
+        0 => [
+            'bahasa' => 'ind'
+            'jml' => '1'
+        ]
+    ]
+    'catID' => null
+    'catIDmerge' => null
+    '__returnUrl' => '/inlislite3/opac/detail-opac?id=864'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8123'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_SEC_CH_UA' => '\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'Z3lNOFZCLlQoGipebipGLR41G2skEBs.CjYpbgwsfzAACQFWMypqEw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:8123'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:8123/inlislite3/opac/detail-opac?id=864'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_identity=af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B33%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=49376v1gj6c63oh3inoavnrvi5; _csrf=242579b6352e80e8f362b9eaec0e85dfc1d55381db3bc1f116f7202ccb23be81a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mNeX1UVUeQYlcMv038s3BLFBoahEU2n2%22%3B%7D; _backendInlislite=c691086defc13cf8f7175e2400e5121bb60a563c9d1c3fb8c2d3751ebaeda6afa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_backendInlislite%22%3Bi%3A1%3Bs%3A32%3A%22Egag6BEoHyv0OtELbDHikKCNI_5koQkx%22%3B%7D; guestbook=0fa54f94e231330b6508367e298ceaca5c64464c7b545da32692c2f2f1535e8fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22guestbook%22%3Bi%3A1%3Bs%3A32%3A%22ApfdENdk9UsibLK9cfze7djVAmdLXs5W%22%3B%7D; usersSetLocationBukutamu=bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a%3A2%3A%7Bi%3A0%3Bs%3A24%3A%22usersSetLocationBukutamu%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; location_Bukutamu_id=cd550d7931a1b5e8698ce1993423a81b0814640680bf24b965839648e45e8da2a%3A2%3A%7Bi%3A0%3Bs%3A20%3A%22location_Bukutamu_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail=7c034c17a6edbf6de67142042dc2e75b8209b4b6a5ec865266227cf8514c2c82a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22location_detail%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; pengembalianmandiri=0ba2e2aa3e75234a34f169e267c13c6bea54324666dd75692ccccb02032ce554a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22pengembalianmandiri%22%3Bi%3A1%3Bs%3A32%3A%222m9jl8yGerOiL6o0G-NYwxA79ghgwL_K%22%3B%7D; usersSetLocPngblianMandiri=23612243f67b5837260b989a9ad4daf15e7135045011ba52d99bc8184faf8353a%3A2%3A%7Bi%3A0%3Bs%3A26%3A%22usersSetLocPngblianMandiri%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; usersIDPngblianMandiri=7037f043fe2377f6dd8ab9d27d90ce1b3d3f51e35d5272821ca4560bf5288b4ea%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22usersIDPngblianMandiri%22%3Bi%3A1%3Bi%3A33%3B%7D; location_pengembalianmandiri_id=2ae7e23eb0e7634b685e5c1abe17b9a7653b07fe733b2314025ec2f11832453ca%3A2%3A%7Bi%3A0%3Bs%3A31%3A%22location_pengembalianmandiri_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail_pengembalianmandiri=ea44f75bcece8e55ecfcc06a7135bedca8b9324b763c110af9ab3244c118f9f3a%3A2%3A%7Bi%3A0%3Bs%3A35%3A%22location_detail_pengembalianmandiri%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; peminjamanmandiri=42b346d0c0bf715d380a3726882f31fc4006a289f5662f7b58b9ba0fb7a3885ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22peminjamanmandiri%22%3Bi%3A1%3Bs%3A32%3A%22vd_fCJLj_VTBwk7fMyNXKUUedJS6-7yz%22%3B%7D; usersSetLocPmnjmanMandiri=065e40d69c466401dc75589f94fb5f08075801e0688062abf7e6eb9ab99e33ffa%3A2%3A%7Bi%3A0%3Bs%3A25%3A%22usersSetLocPmnjmanMandiri%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; usersIDPmnjmanMandiri=bc09e52d8ee485a6c264d1701382fe3df40df3416ba73a9169101b2cd7cc7182a%3A2%3A%7Bi%3A0%3Bs%3A21%3A%22usersIDPmnjmanMandiri%22%3Bi%3A1%3Bi%3A33%3B%7D; location_peminjamanmandiri_id=83b2b1f1141321217bdeab15888672498246506af17ff4be7f43ba0263ea8564a%3A2%3A%7Bi%3A0%3Bs%3A29%3A%22location_peminjamanmandiri_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail_peminjamanmandiri=132071fb73842df63024a0530c31f1133dfedb72324f24e548e668286a24ea12a%3A2%3A%7Bi%3A0%3Bs%3A33%3A%22location_detail_peminjamanmandiri%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; backendSession=b5ot72tvf6ahj6mm84u4gca866; keanggotaanSession=2eguoii9tb4lvjdhpipp1cu3c6; _OpacInlislite=0c5d92cd2a1803289ae270c6f0ae9e99c080695bf7538015be79e5f594004ca5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_OpacInlislite%22%3Bi%3A1%3Bs%3A32%3A%22Ocgf8hhyyLVSrR5jmOdVZnQdgpLnehDG%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 8123</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8123'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/opac/index.php'
+    'REMOTE_PORT' => '53396'
+    'REDIRECT_QUERY_STRING' => 'action=logDownload&ID=1'
+    'REDIRECT_URL' => 'http://localhost:8123/inlislite3/opac/detail-opac?action=logDownload&ID=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'action=logDownload&ID=1'
+    'REQUEST_URI' => '/inlislite3/opac/detail-opac?action=logDownload&ID=1'
+    'SCRIPT_NAME' => '/inlislite3/opac/index.php'
+    'PHP_SELF' => '/inlislite3/opac/index.php'
+    'REQUEST_TIME_FLOAT' => 1687748007.156
+    'REQUEST_TIME' => 1687748007
+]
+2023-06-26 09:55:20 [::1][-][2eguoii9tb4lvjdhpipp1cu3c6][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Maaf Data Yang anda cari tidak ditemukan' in C:\xampp\htdocs\inlislite3\opac\controllers\DetailOpacController.php:746
+Stack trace:
+#0 [internal function]: opac\controllers\DetailOpacController->actionIndex()
+#1 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#4 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('detail-opac', Array)
+#5 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\inlislite3\opac\index.php(26): yii\base\Application->run()
+#7 {main}
+2023-06-26 09:55:19 [::1][-][2eguoii9tb4lvjdhpipp1cu3c6][info][application] $_GET = [
+    'action' => 'logDownload'
+    'ID' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => 'af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a:2:{i:0;s:9:\"_identity\";i:1;s:17:\"[33,null,2592000]\";}'
+    'PHPSESSID' => '49376v1gj6c63oh3inoavnrvi5'
+    '_csrf' => '242579b6352e80e8f362b9eaec0e85dfc1d55381db3bc1f116f7202ccb23be81a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mNeX1UVUeQYlcMv038s3BLFBoahEU2n2\";}'
+    '_backendInlislite' => 'c691086defc13cf8f7175e2400e5121bb60a563c9d1c3fb8c2d3751ebaeda6afa:2:{i:0;s:17:\"_backendInlislite\";i:1;s:32:\"Egag6BEoHyv0OtELbDHikKCNI_5koQkx\";}'
+    'guestbook' => '0fa54f94e231330b6508367e298ceaca5c64464c7b545da32692c2f2f1535e8fa:2:{i:0;s:9:\"guestbook\";i:1;s:32:\"ApfdENdk9UsibLK9cfze7djVAmdLXs5W\";}'
+    'usersSetLocationBukutamu' => 'bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a:2:{i:0;s:24:\"usersSetLocationBukutamu\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'location_Bukutamu_id' => 'cd550d7931a1b5e8698ce1993423a81b0814640680bf24b965839648e45e8da2a:2:{i:0;s:20:\"location_Bukutamu_id\";i:1;s:3:\"473\";}'
+    'location_detail' => '7c034c17a6edbf6de67142042dc2e75b8209b4b6a5ec865266227cf8514c2c82a:2:{i:0;s:15:\"location_detail\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'pengembalianmandiri' => '0ba2e2aa3e75234a34f169e267c13c6bea54324666dd75692ccccb02032ce554a:2:{i:0;s:19:\"pengembalianmandiri\";i:1;s:32:\"2m9jl8yGerOiL6o0G-NYwxA79ghgwL_K\";}'
+    'usersSetLocPngblianMandiri' => '23612243f67b5837260b989a9ad4daf15e7135045011ba52d99bc8184faf8353a:2:{i:0;s:26:\"usersSetLocPngblianMandiri\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'usersIDPngblianMandiri' => '7037f043fe2377f6dd8ab9d27d90ce1b3d3f51e35d5272821ca4560bf5288b4ea:2:{i:0;s:22:\"usersIDPngblianMandiri\";i:1;i:33;}'
+    'location_pengembalianmandiri_id' => '2ae7e23eb0e7634b685e5c1abe17b9a7653b07fe733b2314025ec2f11832453ca:2:{i:0;s:31:\"location_pengembalianmandiri_id\";i:1;s:3:\"473\";}'
+    'location_detail_pengembalianmandiri' => 'ea44f75bcece8e55ecfcc06a7135bedca8b9324b763c110af9ab3244c118f9f3a:2:{i:0;s:35:\"location_detail_pengembalianmandiri\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'peminjamanmandiri' => '42b346d0c0bf715d380a3726882f31fc4006a289f5662f7b58b9ba0fb7a3885ca:2:{i:0;s:17:\"peminjamanmandiri\";i:1;s:32:\"vd_fCJLj_VTBwk7fMyNXKUUedJS6-7yz\";}'
+    'usersSetLocPmnjmanMandiri' => '065e40d69c466401dc75589f94fb5f08075801e0688062abf7e6eb9ab99e33ffa:2:{i:0;s:25:\"usersSetLocPmnjmanMandiri\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'usersIDPmnjmanMandiri' => 'bc09e52d8ee485a6c264d1701382fe3df40df3416ba73a9169101b2cd7cc7182a:2:{i:0;s:21:\"usersIDPmnjmanMandiri\";i:1;i:33;}'
+    'location_peminjamanmandiri_id' => '83b2b1f1141321217bdeab15888672498246506af17ff4be7f43ba0263ea8564a:2:{i:0;s:29:\"location_peminjamanmandiri_id\";i:1;s:3:\"473\";}'
+    'location_detail_peminjamanmandiri' => '132071fb73842df63024a0530c31f1133dfedb72324f24e548e668286a24ea12a:2:{i:0;s:33:\"location_detail_peminjamanmandiri\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'backendSession' => 'b5ot72tvf6ahj6mm84u4gca866'
+    'keanggotaanSession' => '2eguoii9tb4lvjdhpipp1cu3c6'
+    '_OpacInlislite' => '0c5d92cd2a1803289ae270c6f0ae9e99c080695bf7538015be79e5f594004ca5a:2:{i:0;s:14:\"_OpacInlislite\";i:1;s:32:\"Ocgf8hhyyLVSrR5jmOdVZnQdgpLnehDG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'RiwayatPencarian' => [
+        0 => [
+            'ip' => '192.168.1.10'
+            'url' => 'http://localhost:8123/inlislite3/opac/pencarian-lanjut?action=pencarianLanjut&bahan=Semua+Jenis+Bahan&bahasa=&action=pencarianLanjut&targetPembaca=&bentukKarya=&katakunci%5B%5D=perempuan&jenis%5B%5D=di+dalam&tag%5B%5D=Judul'
+            'action' => 'pencarianLanjut'
+            'keyword' => 'Judul di dalam = perempuan'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '06-26-2023 09:53:07'
+        ]
+    ]
+    'countSearch' => '1'
+    'dataFacedAuthor' => [
+        0 => [
+            'Author' => 'Tetty Yukesti'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedPublisher' => [
+        0 => [
+            'Publisher' => 'Elex Media Komputindo,'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedPublishLocation' => [
+        0 => [
+            'PublishLocation' => 'Jakarta :'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedPublishYear' => [
+        0 => [
+            'PublishYear' => '2015'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedSubject' => [
+        0 => [
+            'SUBJECT' => 'Wanita - Biografi'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedBahasa' => [
+        0 => [
+            'bahasa' => 'ind'
+            'jml' => '1'
+        ]
+    ]
+    'catID' => null
+    'catIDmerge' => null
+    '__returnUrl' => '/inlislite3/opac/detail-opac?id=864'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8123'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_SEC_CH_UA' => '\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'Z3lNOFZCLlQoGipebipGLR41G2skEBs.CjYpbgwsfzAACQFWMypqEw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:8123'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:8123/inlislite3/opac/detail-opac?id=864'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_identity=af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B33%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=49376v1gj6c63oh3inoavnrvi5; _csrf=242579b6352e80e8f362b9eaec0e85dfc1d55381db3bc1f116f7202ccb23be81a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mNeX1UVUeQYlcMv038s3BLFBoahEU2n2%22%3B%7D; _backendInlislite=c691086defc13cf8f7175e2400e5121bb60a563c9d1c3fb8c2d3751ebaeda6afa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_backendInlislite%22%3Bi%3A1%3Bs%3A32%3A%22Egag6BEoHyv0OtELbDHikKCNI_5koQkx%22%3B%7D; guestbook=0fa54f94e231330b6508367e298ceaca5c64464c7b545da32692c2f2f1535e8fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22guestbook%22%3Bi%3A1%3Bs%3A32%3A%22ApfdENdk9UsibLK9cfze7djVAmdLXs5W%22%3B%7D; usersSetLocationBukutamu=bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a%3A2%3A%7Bi%3A0%3Bs%3A24%3A%22usersSetLocationBukutamu%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; location_Bukutamu_id=cd550d7931a1b5e8698ce1993423a81b0814640680bf24b965839648e45e8da2a%3A2%3A%7Bi%3A0%3Bs%3A20%3A%22location_Bukutamu_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail=7c034c17a6edbf6de67142042dc2e75b8209b4b6a5ec865266227cf8514c2c82a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22location_detail%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; pengembalianmandiri=0ba2e2aa3e75234a34f169e267c13c6bea54324666dd75692ccccb02032ce554a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22pengembalianmandiri%22%3Bi%3A1%3Bs%3A32%3A%222m9jl8yGerOiL6o0G-NYwxA79ghgwL_K%22%3B%7D; usersSetLocPngblianMandiri=23612243f67b5837260b989a9ad4daf15e7135045011ba52d99bc8184faf8353a%3A2%3A%7Bi%3A0%3Bs%3A26%3A%22usersSetLocPngblianMandiri%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; usersIDPngblianMandiri=7037f043fe2377f6dd8ab9d27d90ce1b3d3f51e35d5272821ca4560bf5288b4ea%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22usersIDPngblianMandiri%22%3Bi%3A1%3Bi%3A33%3B%7D; location_pengembalianmandiri_id=2ae7e23eb0e7634b685e5c1abe17b9a7653b07fe733b2314025ec2f11832453ca%3A2%3A%7Bi%3A0%3Bs%3A31%3A%22location_pengembalianmandiri_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail_pengembalianmandiri=ea44f75bcece8e55ecfcc06a7135bedca8b9324b763c110af9ab3244c118f9f3a%3A2%3A%7Bi%3A0%3Bs%3A35%3A%22location_detail_pengembalianmandiri%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; peminjamanmandiri=42b346d0c0bf715d380a3726882f31fc4006a289f5662f7b58b9ba0fb7a3885ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22peminjamanmandiri%22%3Bi%3A1%3Bs%3A32%3A%22vd_fCJLj_VTBwk7fMyNXKUUedJS6-7yz%22%3B%7D; usersSetLocPmnjmanMandiri=065e40d69c466401dc75589f94fb5f08075801e0688062abf7e6eb9ab99e33ffa%3A2%3A%7Bi%3A0%3Bs%3A25%3A%22usersSetLocPmnjmanMandiri%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; usersIDPmnjmanMandiri=bc09e52d8ee485a6c264d1701382fe3df40df3416ba73a9169101b2cd7cc7182a%3A2%3A%7Bi%3A0%3Bs%3A21%3A%22usersIDPmnjmanMandiri%22%3Bi%3A1%3Bi%3A33%3B%7D; location_peminjamanmandiri_id=83b2b1f1141321217bdeab15888672498246506af17ff4be7f43ba0263ea8564a%3A2%3A%7Bi%3A0%3Bs%3A29%3A%22location_peminjamanmandiri_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail_peminjamanmandiri=132071fb73842df63024a0530c31f1133dfedb72324f24e548e668286a24ea12a%3A2%3A%7Bi%3A0%3Bs%3A33%3A%22location_detail_peminjamanmandiri%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; backendSession=b5ot72tvf6ahj6mm84u4gca866; keanggotaanSession=2eguoii9tb4lvjdhpipp1cu3c6; _OpacInlislite=0c5d92cd2a1803289ae270c6f0ae9e99c080695bf7538015be79e5f594004ca5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_OpacInlislite%22%3Bi%3A1%3Bs%3A32%3A%22Ocgf8hhyyLVSrR5jmOdVZnQdgpLnehDG%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 8123</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8123'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/opac/index.php'
+    'REMOTE_PORT' => '53438'
+    'REDIRECT_QUERY_STRING' => 'action=logDownload&ID=1'
+    'REDIRECT_URL' => 'http://localhost:8123/inlislite3/opac/detail-opac?action=logDownload&ID=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'action=logDownload&ID=1'
+    'REQUEST_URI' => '/inlislite3/opac/detail-opac?action=logDownload&ID=1'
+    'SCRIPT_NAME' => '/inlislite3/opac/index.php'
+    'PHP_SELF' => '/inlislite3/opac/index.php'
+    'REQUEST_TIME_FLOAT' => 1687748119.272
+    'REQUEST_TIME' => 1687748119
+]
+2023-06-26 10:48:04 [::1][-][2eguoii9tb4lvjdhpipp1cu3c6][error][yii\elasticsearch\Exception] exception 'yii\elasticsearch\Exception' with message 'Elasticsearch request failed: 7 - Failed to connect to 127.0.0.1 port 9200: Connection refused' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php:503
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(176): yii\elasticsearch\Connection->httpRequest('GET', 'http://127.0.0....')
+#1 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(155): yii\elasticsearch\Connection->populateNodes()
+#2 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(257): yii\elasticsearch\Connection->open()
+#3 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Query.php(218): yii\elasticsearch\Connection->createCommand(Array)
+#4 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Query.php(401): yii\elasticsearch\Query->createCommand(NULL)
+#5 C:\xampp\htdocs\inlislite3\opac\controllers\SearchController.php(428): yii\elasticsearch\Query->count()
+#6 [internal function]: opac\controllers\SearchController->actionIndex()
+#7 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#10 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('search/index', Array)
+#11 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\inlislite3\opac\index.php(26): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [requestMethod] => GET
+    [requestUrl] => http://127.0.0.1:9200/_nodes/_all/http
+    [requestBody] => 
+    [responseHeaders] => Array
+        (
+        )
+
+    [responseBody] => 
+)
+
+2023-06-26 10:48:01 [::1][-][2eguoii9tb4lvjdhpipp1cu3c6][info][application] $_GET = [
+    'action' => 'pencarianSederhana'
+    'katakunci' => 'perempuan'
+    'ruas' => 'Judul'
+    'bahan' => 'Semua Jenis Bahan'
+]
+
+$_COOKIE = [
+    '_identity' => 'af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a:2:{i:0;s:9:\"_identity\";i:1;s:17:\"[33,null,2592000]\";}'
+    'PHPSESSID' => '49376v1gj6c63oh3inoavnrvi5'
+    '_csrf' => '242579b6352e80e8f362b9eaec0e85dfc1d55381db3bc1f116f7202ccb23be81a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mNeX1UVUeQYlcMv038s3BLFBoahEU2n2\";}'
+    '_backendInlislite' => 'c691086defc13cf8f7175e2400e5121bb60a563c9d1c3fb8c2d3751ebaeda6afa:2:{i:0;s:17:\"_backendInlislite\";i:1;s:32:\"Egag6BEoHyv0OtELbDHikKCNI_5koQkx\";}'
+    'guestbook' => '0fa54f94e231330b6508367e298ceaca5c64464c7b545da32692c2f2f1535e8fa:2:{i:0;s:9:\"guestbook\";i:1;s:32:\"ApfdENdk9UsibLK9cfze7djVAmdLXs5W\";}'
+    'usersSetLocationBukutamu' => 'bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a:2:{i:0;s:24:\"usersSetLocationBukutamu\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'location_Bukutamu_id' => 'cd550d7931a1b5e8698ce1993423a81b0814640680bf24b965839648e45e8da2a:2:{i:0;s:20:\"location_Bukutamu_id\";i:1;s:3:\"473\";}'
+    'location_detail' => '7c034c17a6edbf6de67142042dc2e75b8209b4b6a5ec865266227cf8514c2c82a:2:{i:0;s:15:\"location_detail\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'pengembalianmandiri' => '0ba2e2aa3e75234a34f169e267c13c6bea54324666dd75692ccccb02032ce554a:2:{i:0;s:19:\"pengembalianmandiri\";i:1;s:32:\"2m9jl8yGerOiL6o0G-NYwxA79ghgwL_K\";}'
+    'usersSetLocPngblianMandiri' => '23612243f67b5837260b989a9ad4daf15e7135045011ba52d99bc8184faf8353a:2:{i:0;s:26:\"usersSetLocPngblianMandiri\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'usersIDPngblianMandiri' => '7037f043fe2377f6dd8ab9d27d90ce1b3d3f51e35d5272821ca4560bf5288b4ea:2:{i:0;s:22:\"usersIDPngblianMandiri\";i:1;i:33;}'
+    'location_pengembalianmandiri_id' => '2ae7e23eb0e7634b685e5c1abe17b9a7653b07fe733b2314025ec2f11832453ca:2:{i:0;s:31:\"location_pengembalianmandiri_id\";i:1;s:3:\"473\";}'
+    'location_detail_pengembalianmandiri' => 'ea44f75bcece8e55ecfcc06a7135bedca8b9324b763c110af9ab3244c118f9f3a:2:{i:0;s:35:\"location_detail_pengembalianmandiri\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'peminjamanmandiri' => '42b346d0c0bf715d380a3726882f31fc4006a289f5662f7b58b9ba0fb7a3885ca:2:{i:0;s:17:\"peminjamanmandiri\";i:1;s:32:\"vd_fCJLj_VTBwk7fMyNXKUUedJS6-7yz\";}'
+    'usersSetLocPmnjmanMandiri' => '065e40d69c466401dc75589f94fb5f08075801e0688062abf7e6eb9ab99e33ffa:2:{i:0;s:25:\"usersSetLocPmnjmanMandiri\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'usersIDPmnjmanMandiri' => 'bc09e52d8ee485a6c264d1701382fe3df40df3416ba73a9169101b2cd7cc7182a:2:{i:0;s:21:\"usersIDPmnjmanMandiri\";i:1;i:33;}'
+    'location_peminjamanmandiri_id' => '83b2b1f1141321217bdeab15888672498246506af17ff4be7f43ba0263ea8564a:2:{i:0;s:29:\"location_peminjamanmandiri_id\";i:1;s:3:\"473\";}'
+    'location_detail_peminjamanmandiri' => '132071fb73842df63024a0530c31f1133dfedb72324f24e548e668286a24ea12a:2:{i:0;s:33:\"location_detail_peminjamanmandiri\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'backendSession' => 'b5ot72tvf6ahj6mm84u4gca866'
+    'keanggotaanSession' => '2eguoii9tb4lvjdhpipp1cu3c6'
+    '_OpacInlislite' => '0c5d92cd2a1803289ae270c6f0ae9e99c080695bf7538015be79e5f594004ca5a:2:{i:0;s:14:\"_OpacInlislite\";i:1;s:32:\"Ocgf8hhyyLVSrR5jmOdVZnQdgpLnehDG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inlislite3/opac/bookmark'
+    'RiwayatPencarian' => [
+        0 => [
+            'ip' => '192.168.1.10'
+            'url' => 'http://localhost:8123/inlislite3/opac/pencarian-lanjut?action=pencarianLanjut&bahan=Semua+Jenis+Bahan&bahasa=&action=pencarianLanjut&targetPembaca=&bentukKarya=&katakunci%5B%5D=perempuan&jenis%5B%5D=di+dalam&tag%5B%5D=Judul'
+            'action' => 'pencarianLanjut'
+            'keyword' => 'Judul di dalam = perempuan'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '06-26-2023 10:47:12'
+        ]
+        1 => [
+            'ip' => '192.168.1.10'
+            'url' => 'http://localhost:8123/inlislite3/opac/pencarian-lanjut?action=pencarianLanjut&bahan=Semua+Jenis+Bahan&bahasa=&action=pencarianLanjut&targetPembaca=&bentukKarya=&katakunci%5B%5D=perempuan&jenis%5B%5D=di+dalam&tag%5B%5D=Judul'
+            'action' => 'pencarianLanjut'
+            'keyword' => 'Judul di dalam = perempuan'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '06-26-2023 10:47:47'
+        ]
+        2 => [
+            'ip' => '192.168.1.10'
+            'url' => 'http://localhost:8123/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+            'action' => 'pencarianSederhana'
+            'keyword' => 'Judul = perempuan'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '06-26-2023 10:48:01'
+        ]
+    ]
+    'countSearch' => '1'
+    'dataFacedAuthor' => [
+        0 => [
+            'Author' => 'Tetty Yukesti'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedPublisher' => [
+        0 => [
+            'Publisher' => 'Elex Media Komputindo,'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedPublishLocation' => [
+        0 => [
+            'PublishLocation' => 'Jakarta :'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedPublishYear' => [
+        0 => [
+            'PublishYear' => '2015'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedSubject' => [
+        0 => [
+            'SUBJECT' => 'Wanita - Biografi'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedBahasa' => [
+        0 => [
+            'bahasa' => 'ind'
+            'jml' => '1'
+        ]
+    ]
+    'catID' => null
+    'catIDmerge' => null
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8123'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8123/inlislite3/opac/bookmark'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_identity=af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B33%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=49376v1gj6c63oh3inoavnrvi5; _csrf=242579b6352e80e8f362b9eaec0e85dfc1d55381db3bc1f116f7202ccb23be81a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mNeX1UVUeQYlcMv038s3BLFBoahEU2n2%22%3B%7D; _backendInlislite=c691086defc13cf8f7175e2400e5121bb60a563c9d1c3fb8c2d3751ebaeda6afa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_backendInlislite%22%3Bi%3A1%3Bs%3A32%3A%22Egag6BEoHyv0OtELbDHikKCNI_5koQkx%22%3B%7D; guestbook=0fa54f94e231330b6508367e298ceaca5c64464c7b545da32692c2f2f1535e8fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22guestbook%22%3Bi%3A1%3Bs%3A32%3A%22ApfdENdk9UsibLK9cfze7djVAmdLXs5W%22%3B%7D; usersSetLocationBukutamu=bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a%3A2%3A%7Bi%3A0%3Bs%3A24%3A%22usersSetLocationBukutamu%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; location_Bukutamu_id=cd550d7931a1b5e8698ce1993423a81b0814640680bf24b965839648e45e8da2a%3A2%3A%7Bi%3A0%3Bs%3A20%3A%22location_Bukutamu_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail=7c034c17a6edbf6de67142042dc2e75b8209b4b6a5ec865266227cf8514c2c82a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22location_detail%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; pengembalianmandiri=0ba2e2aa3e75234a34f169e267c13c6bea54324666dd75692ccccb02032ce554a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22pengembalianmandiri%22%3Bi%3A1%3Bs%3A32%3A%222m9jl8yGerOiL6o0G-NYwxA79ghgwL_K%22%3B%7D; usersSetLocPngblianMandiri=23612243f67b5837260b989a9ad4daf15e7135045011ba52d99bc8184faf8353a%3A2%3A%7Bi%3A0%3Bs%3A26%3A%22usersSetLocPngblianMandiri%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; usersIDPngblianMandiri=7037f043fe2377f6dd8ab9d27d90ce1b3d3f51e35d5272821ca4560bf5288b4ea%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22usersIDPngblianMandiri%22%3Bi%3A1%3Bi%3A33%3B%7D; location_pengembalianmandiri_id=2ae7e23eb0e7634b685e5c1abe17b9a7653b07fe733b2314025ec2f11832453ca%3A2%3A%7Bi%3A0%3Bs%3A31%3A%22location_pengembalianmandiri_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail_pengembalianmandiri=ea44f75bcece8e55ecfcc06a7135bedca8b9324b763c110af9ab3244c118f9f3a%3A2%3A%7Bi%3A0%3Bs%3A35%3A%22location_detail_pengembalianmandiri%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; peminjamanmandiri=42b346d0c0bf715d380a3726882f31fc4006a289f5662f7b58b9ba0fb7a3885ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22peminjamanmandiri%22%3Bi%3A1%3Bs%3A32%3A%22vd_fCJLj_VTBwk7fMyNXKUUedJS6-7yz%22%3B%7D; usersSetLocPmnjmanMandiri=065e40d69c466401dc75589f94fb5f08075801e0688062abf7e6eb9ab99e33ffa%3A2%3A%7Bi%3A0%3Bs%3A25%3A%22usersSetLocPmnjmanMandiri%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; usersIDPmnjmanMandiri=bc09e52d8ee485a6c264d1701382fe3df40df3416ba73a9169101b2cd7cc7182a%3A2%3A%7Bi%3A0%3Bs%3A21%3A%22usersIDPmnjmanMandiri%22%3Bi%3A1%3Bi%3A33%3B%7D; location_peminjamanmandiri_id=83b2b1f1141321217bdeab15888672498246506af17ff4be7f43ba0263ea8564a%3A2%3A%7Bi%3A0%3Bs%3A29%3A%22location_peminjamanmandiri_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail_peminjamanmandiri=132071fb73842df63024a0530c31f1133dfedb72324f24e548e668286a24ea12a%3A2%3A%7Bi%3A0%3Bs%3A33%3A%22location_detail_peminjamanmandiri%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; backendSession=b5ot72tvf6ahj6mm84u4gca866; keanggotaanSession=2eguoii9tb4lvjdhpipp1cu3c6; _OpacInlislite=0c5d92cd2a1803289ae270c6f0ae9e99c080695bf7538015be79e5f594004ca5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_OpacInlislite%22%3Bi%3A1%3Bs%3A32%3A%22Ocgf8hhyyLVSrR5jmOdVZnQdgpLnehDG%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 8123</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8123'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/opac/index.php'
+    'REMOTE_PORT' => '54336'
+    'REDIRECT_QUERY_STRING' => 'action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'REDIRECT_URL' => 'http://localhost:8123/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'REQUEST_URI' => '/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'SCRIPT_NAME' => '/inlislite3/opac/index.php'
+    'PHP_SELF' => '/inlislite3/opac/index.php'
+    'REQUEST_TIME_FLOAT' => 1687751281.174
+    'REQUEST_TIME' => 1687751281
+]
+2023-06-26 10:48:10 [::1][-][2eguoii9tb4lvjdhpipp1cu3c6][error][yii\elasticsearch\Exception] exception 'yii\elasticsearch\Exception' with message 'Elasticsearch request failed: 7 - Failed to connect to 127.0.0.1 port 9200: Connection refused' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php:503
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(176): yii\elasticsearch\Connection->httpRequest('GET', 'http://127.0.0....')
+#1 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(155): yii\elasticsearch\Connection->populateNodes()
+#2 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(257): yii\elasticsearch\Connection->open()
+#3 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Query.php(218): yii\elasticsearch\Connection->createCommand(Array)
+#4 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Query.php(401): yii\elasticsearch\Query->createCommand(NULL)
+#5 C:\xampp\htdocs\inlislite3\opac\controllers\SearchController.php(428): yii\elasticsearch\Query->count()
+#6 [internal function]: opac\controllers\SearchController->actionIndex()
+#7 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#10 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('search/index', Array)
+#11 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\inlislite3\opac\index.php(26): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [requestMethod] => GET
+    [requestUrl] => http://127.0.0.1:9200/_nodes/_all/http
+    [requestBody] => 
+    [responseHeaders] => Array
+        (
+        )
+
+    [responseBody] => 
+)
+
+2023-06-26 10:48:07 [::1][-][2eguoii9tb4lvjdhpipp1cu3c6][info][application] $_GET = [
+    'action' => 'pencarianSederhana'
+    'katakunci' => 'perempuan'
+    'ruas' => 'Judul'
+    'bahan' => 'Semua Jenis Bahan'
+]
+
+$_COOKIE = [
+    '_identity' => 'af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a:2:{i:0;s:9:\"_identity\";i:1;s:17:\"[33,null,2592000]\";}'
+    'PHPSESSID' => '49376v1gj6c63oh3inoavnrvi5'
+    '_csrf' => '242579b6352e80e8f362b9eaec0e85dfc1d55381db3bc1f116f7202ccb23be81a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mNeX1UVUeQYlcMv038s3BLFBoahEU2n2\";}'
+    '_backendInlislite' => 'c691086defc13cf8f7175e2400e5121bb60a563c9d1c3fb8c2d3751ebaeda6afa:2:{i:0;s:17:\"_backendInlislite\";i:1;s:32:\"Egag6BEoHyv0OtELbDHikKCNI_5koQkx\";}'
+    'guestbook' => '0fa54f94e231330b6508367e298ceaca5c64464c7b545da32692c2f2f1535e8fa:2:{i:0;s:9:\"guestbook\";i:1;s:32:\"ApfdENdk9UsibLK9cfze7djVAmdLXs5W\";}'
+    'usersSetLocationBukutamu' => 'bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a:2:{i:0;s:24:\"usersSetLocationBukutamu\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'location_Bukutamu_id' => 'cd550d7931a1b5e8698ce1993423a81b0814640680bf24b965839648e45e8da2a:2:{i:0;s:20:\"location_Bukutamu_id\";i:1;s:3:\"473\";}'
+    'location_detail' => '7c034c17a6edbf6de67142042dc2e75b8209b4b6a5ec865266227cf8514c2c82a:2:{i:0;s:15:\"location_detail\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'pengembalianmandiri' => '0ba2e2aa3e75234a34f169e267c13c6bea54324666dd75692ccccb02032ce554a:2:{i:0;s:19:\"pengembalianmandiri\";i:1;s:32:\"2m9jl8yGerOiL6o0G-NYwxA79ghgwL_K\";}'
+    'usersSetLocPngblianMandiri' => '23612243f67b5837260b989a9ad4daf15e7135045011ba52d99bc8184faf8353a:2:{i:0;s:26:\"usersSetLocPngblianMandiri\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'usersIDPngblianMandiri' => '7037f043fe2377f6dd8ab9d27d90ce1b3d3f51e35d5272821ca4560bf5288b4ea:2:{i:0;s:22:\"usersIDPngblianMandiri\";i:1;i:33;}'
+    'location_pengembalianmandiri_id' => '2ae7e23eb0e7634b685e5c1abe17b9a7653b07fe733b2314025ec2f11832453ca:2:{i:0;s:31:\"location_pengembalianmandiri_id\";i:1;s:3:\"473\";}'
+    'location_detail_pengembalianmandiri' => 'ea44f75bcece8e55ecfcc06a7135bedca8b9324b763c110af9ab3244c118f9f3a:2:{i:0;s:35:\"location_detail_pengembalianmandiri\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'peminjamanmandiri' => '42b346d0c0bf715d380a3726882f31fc4006a289f5662f7b58b9ba0fb7a3885ca:2:{i:0;s:17:\"peminjamanmandiri\";i:1;s:32:\"vd_fCJLj_VTBwk7fMyNXKUUedJS6-7yz\";}'
+    'usersSetLocPmnjmanMandiri' => '065e40d69c466401dc75589f94fb5f08075801e0688062abf7e6eb9ab99e33ffa:2:{i:0;s:25:\"usersSetLocPmnjmanMandiri\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'usersIDPmnjmanMandiri' => 'bc09e52d8ee485a6c264d1701382fe3df40df3416ba73a9169101b2cd7cc7182a:2:{i:0;s:21:\"usersIDPmnjmanMandiri\";i:1;i:33;}'
+    'location_peminjamanmandiri_id' => '83b2b1f1141321217bdeab15888672498246506af17ff4be7f43ba0263ea8564a:2:{i:0;s:29:\"location_peminjamanmandiri_id\";i:1;s:3:\"473\";}'
+    'location_detail_peminjamanmandiri' => '132071fb73842df63024a0530c31f1133dfedb72324f24e548e668286a24ea12a:2:{i:0;s:33:\"location_detail_peminjamanmandiri\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'backendSession' => 'b5ot72tvf6ahj6mm84u4gca866'
+    'keanggotaanSession' => '2eguoii9tb4lvjdhpipp1cu3c6'
+    '_OpacInlislite' => '0c5d92cd2a1803289ae270c6f0ae9e99c080695bf7538015be79e5f594004ca5a:2:{i:0;s:14:\"_OpacInlislite\";i:1;s:32:\"Ocgf8hhyyLVSrR5jmOdVZnQdgpLnehDG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inlislite3/opac/bookmark'
+    'RiwayatPencarian' => [
+        0 => [
+            'ip' => '192.168.1.10'
+            'url' => 'http://localhost:8123/inlislite3/opac/pencarian-lanjut?action=pencarianLanjut&bahan=Semua+Jenis+Bahan&bahasa=&action=pencarianLanjut&targetPembaca=&bentukKarya=&katakunci%5B%5D=perempuan&jenis%5B%5D=di+dalam&tag%5B%5D=Judul'
+            'action' => 'pencarianLanjut'
+            'keyword' => 'Judul di dalam = perempuan'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '06-26-2023 10:47:12'
+        ]
+        1 => [
+            'ip' => '192.168.1.10'
+            'url' => 'http://localhost:8123/inlislite3/opac/pencarian-lanjut?action=pencarianLanjut&bahan=Semua+Jenis+Bahan&bahasa=&action=pencarianLanjut&targetPembaca=&bentukKarya=&katakunci%5B%5D=perempuan&jenis%5B%5D=di+dalam&tag%5B%5D=Judul'
+            'action' => 'pencarianLanjut'
+            'keyword' => 'Judul di dalam = perempuan'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '06-26-2023 10:47:47'
+        ]
+        2 => [
+            'ip' => '192.168.1.10'
+            'url' => 'http://localhost:8123/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+            'action' => 'pencarianSederhana'
+            'keyword' => 'Judul = perempuan'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '06-26-2023 10:48:01'
+        ]
+        3 => [
+            'ip' => '192.168.1.10'
+            'url' => 'http://localhost:8123/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+            'action' => 'pencarianSederhana'
+            'keyword' => 'Judul = perempuan'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '06-26-2023 10:48:07'
+        ]
+    ]
+    'countSearch' => '1'
+    'dataFacedAuthor' => [
+        0 => [
+            'Author' => 'Tetty Yukesti'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedPublisher' => [
+        0 => [
+            'Publisher' => 'Elex Media Komputindo,'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedPublishLocation' => [
+        0 => [
+            'PublishLocation' => 'Jakarta :'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedPublishYear' => [
+        0 => [
+            'PublishYear' => '2015'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedSubject' => [
+        0 => [
+            'SUBJECT' => 'Wanita - Biografi'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedBahasa' => [
+        0 => [
+            'bahasa' => 'ind'
+            'jml' => '1'
+        ]
+    ]
+    'catID' => null
+    'catIDmerge' => null
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8123'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_identity=af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B33%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=49376v1gj6c63oh3inoavnrvi5; _csrf=242579b6352e80e8f362b9eaec0e85dfc1d55381db3bc1f116f7202ccb23be81a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mNeX1UVUeQYlcMv038s3BLFBoahEU2n2%22%3B%7D; _backendInlislite=c691086defc13cf8f7175e2400e5121bb60a563c9d1c3fb8c2d3751ebaeda6afa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_backendInlislite%22%3Bi%3A1%3Bs%3A32%3A%22Egag6BEoHyv0OtELbDHikKCNI_5koQkx%22%3B%7D; guestbook=0fa54f94e231330b6508367e298ceaca5c64464c7b545da32692c2f2f1535e8fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22guestbook%22%3Bi%3A1%3Bs%3A32%3A%22ApfdENdk9UsibLK9cfze7djVAmdLXs5W%22%3B%7D; usersSetLocationBukutamu=bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a%3A2%3A%7Bi%3A0%3Bs%3A24%3A%22usersSetLocationBukutamu%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; location_Bukutamu_id=cd550d7931a1b5e8698ce1993423a81b0814640680bf24b965839648e45e8da2a%3A2%3A%7Bi%3A0%3Bs%3A20%3A%22location_Bukutamu_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail=7c034c17a6edbf6de67142042dc2e75b8209b4b6a5ec865266227cf8514c2c82a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22location_detail%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; pengembalianmandiri=0ba2e2aa3e75234a34f169e267c13c6bea54324666dd75692ccccb02032ce554a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22pengembalianmandiri%22%3Bi%3A1%3Bs%3A32%3A%222m9jl8yGerOiL6o0G-NYwxA79ghgwL_K%22%3B%7D; usersSetLocPngblianMandiri=23612243f67b5837260b989a9ad4daf15e7135045011ba52d99bc8184faf8353a%3A2%3A%7Bi%3A0%3Bs%3A26%3A%22usersSetLocPngblianMandiri%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; usersIDPngblianMandiri=7037f043fe2377f6dd8ab9d27d90ce1b3d3f51e35d5272821ca4560bf5288b4ea%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22usersIDPngblianMandiri%22%3Bi%3A1%3Bi%3A33%3B%7D; location_pengembalianmandiri_id=2ae7e23eb0e7634b685e5c1abe17b9a7653b07fe733b2314025ec2f11832453ca%3A2%3A%7Bi%3A0%3Bs%3A31%3A%22location_pengembalianmandiri_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail_pengembalianmandiri=ea44f75bcece8e55ecfcc06a7135bedca8b9324b763c110af9ab3244c118f9f3a%3A2%3A%7Bi%3A0%3Bs%3A35%3A%22location_detail_pengembalianmandiri%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; peminjamanmandiri=42b346d0c0bf715d380a3726882f31fc4006a289f5662f7b58b9ba0fb7a3885ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22peminjamanmandiri%22%3Bi%3A1%3Bs%3A32%3A%22vd_fCJLj_VTBwk7fMyNXKUUedJS6-7yz%22%3B%7D; usersSetLocPmnjmanMandiri=065e40d69c466401dc75589f94fb5f08075801e0688062abf7e6eb9ab99e33ffa%3A2%3A%7Bi%3A0%3Bs%3A25%3A%22usersSetLocPmnjmanMandiri%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; usersIDPmnjmanMandiri=bc09e52d8ee485a6c264d1701382fe3df40df3416ba73a9169101b2cd7cc7182a%3A2%3A%7Bi%3A0%3Bs%3A21%3A%22usersIDPmnjmanMandiri%22%3Bi%3A1%3Bi%3A33%3B%7D; location_peminjamanmandiri_id=83b2b1f1141321217bdeab15888672498246506af17ff4be7f43ba0263ea8564a%3A2%3A%7Bi%3A0%3Bs%3A29%3A%22location_peminjamanmandiri_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail_peminjamanmandiri=132071fb73842df63024a0530c31f1133dfedb72324f24e548e668286a24ea12a%3A2%3A%7Bi%3A0%3Bs%3A33%3A%22location_detail_peminjamanmandiri%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; backendSession=b5ot72tvf6ahj6mm84u4gca866; keanggotaanSession=2eguoii9tb4lvjdhpipp1cu3c6; _OpacInlislite=0c5d92cd2a1803289ae270c6f0ae9e99c080695bf7538015be79e5f594004ca5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_OpacInlislite%22%3Bi%3A1%3Bs%3A32%3A%22Ocgf8hhyyLVSrR5jmOdVZnQdgpLnehDG%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 8123</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8123'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/opac/index.php'
+    'REMOTE_PORT' => '54337'
+    'REDIRECT_QUERY_STRING' => 'action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'REDIRECT_URL' => 'http://localhost:8123/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'REQUEST_URI' => '/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'SCRIPT_NAME' => '/inlislite3/opac/index.php'
+    'PHP_SELF' => '/inlislite3/opac/index.php'
+    'REQUEST_TIME_FLOAT' => 1687751287.347
+    'REQUEST_TIME' => 1687751287
+]
+2023-06-26 10:48:16 [::1][-][2eguoii9tb4lvjdhpipp1cu3c6][error][yii\elasticsearch\Exception] exception 'yii\elasticsearch\Exception' with message 'Elasticsearch request failed: 7 - Failed to connect to 127.0.0.1 port 9200: Connection refused' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php:503
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(176): yii\elasticsearch\Connection->httpRequest('GET', 'http://127.0.0....')
+#1 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(155): yii\elasticsearch\Connection->populateNodes()
+#2 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Connection.php(257): yii\elasticsearch\Connection->open()
+#3 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Query.php(218): yii\elasticsearch\Connection->createCommand(Array)
+#4 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2-elasticsearch\Query.php(401): yii\elasticsearch\Query->createCommand(NULL)
+#5 C:\xampp\htdocs\inlislite3\opac\controllers\SearchController.php(428): yii\elasticsearch\Query->count()
+#6 [internal function]: opac\controllers\SearchController->actionIndex()
+#7 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#10 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('search/index', Array)
+#11 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\inlislite3\opac\index.php(26): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [requestMethod] => GET
+    [requestUrl] => http://127.0.0.1:9200/_nodes/_all/http
+    [requestBody] => 
+    [responseHeaders] => Array
+        (
+        )
+
+    [responseBody] => 
+)
+
+2023-06-26 10:48:14 [::1][-][2eguoii9tb4lvjdhpipp1cu3c6][info][application] $_GET = [
+    'action' => 'pencarianSederhana'
+    'katakunci' => 'perempuan'
+    'ruas' => 'Judul'
+    'bahan' => 'Semua Jenis Bahan'
+]
+
+$_COOKIE = [
+    '_identity' => 'af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a:2:{i:0;s:9:\"_identity\";i:1;s:17:\"[33,null,2592000]\";}'
+    'PHPSESSID' => '49376v1gj6c63oh3inoavnrvi5'
+    '_csrf' => '242579b6352e80e8f362b9eaec0e85dfc1d55381db3bc1f116f7202ccb23be81a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mNeX1UVUeQYlcMv038s3BLFBoahEU2n2\";}'
+    '_backendInlislite' => 'c691086defc13cf8f7175e2400e5121bb60a563c9d1c3fb8c2d3751ebaeda6afa:2:{i:0;s:17:\"_backendInlislite\";i:1;s:32:\"Egag6BEoHyv0OtELbDHikKCNI_5koQkx\";}'
+    'guestbook' => '0fa54f94e231330b6508367e298ceaca5c64464c7b545da32692c2f2f1535e8fa:2:{i:0;s:9:\"guestbook\";i:1;s:32:\"ApfdENdk9UsibLK9cfze7djVAmdLXs5W\";}'
+    'usersSetLocationBukutamu' => 'bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a:2:{i:0;s:24:\"usersSetLocationBukutamu\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'location_Bukutamu_id' => 'cd550d7931a1b5e8698ce1993423a81b0814640680bf24b965839648e45e8da2a:2:{i:0;s:20:\"location_Bukutamu_id\";i:1;s:3:\"473\";}'
+    'location_detail' => '7c034c17a6edbf6de67142042dc2e75b8209b4b6a5ec865266227cf8514c2c82a:2:{i:0;s:15:\"location_detail\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'pengembalianmandiri' => '0ba2e2aa3e75234a34f169e267c13c6bea54324666dd75692ccccb02032ce554a:2:{i:0;s:19:\"pengembalianmandiri\";i:1;s:32:\"2m9jl8yGerOiL6o0G-NYwxA79ghgwL_K\";}'
+    'usersSetLocPngblianMandiri' => '23612243f67b5837260b989a9ad4daf15e7135045011ba52d99bc8184faf8353a:2:{i:0;s:26:\"usersSetLocPngblianMandiri\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'usersIDPngblianMandiri' => '7037f043fe2377f6dd8ab9d27d90ce1b3d3f51e35d5272821ca4560bf5288b4ea:2:{i:0;s:22:\"usersIDPngblianMandiri\";i:1;i:33;}'
+    'location_pengembalianmandiri_id' => '2ae7e23eb0e7634b685e5c1abe17b9a7653b07fe733b2314025ec2f11832453ca:2:{i:0;s:31:\"location_pengembalianmandiri_id\";i:1;s:3:\"473\";}'
+    'location_detail_pengembalianmandiri' => 'ea44f75bcece8e55ecfcc06a7135bedca8b9324b763c110af9ab3244c118f9f3a:2:{i:0;s:35:\"location_detail_pengembalianmandiri\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'peminjamanmandiri' => '42b346d0c0bf715d380a3726882f31fc4006a289f5662f7b58b9ba0fb7a3885ca:2:{i:0;s:17:\"peminjamanmandiri\";i:1;s:32:\"vd_fCJLj_VTBwk7fMyNXKUUedJS6-7yz\";}'
+    'usersSetLocPmnjmanMandiri' => '065e40d69c466401dc75589f94fb5f08075801e0688062abf7e6eb9ab99e33ffa:2:{i:0;s:25:\"usersSetLocPmnjmanMandiri\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'usersIDPmnjmanMandiri' => 'bc09e52d8ee485a6c264d1701382fe3df40df3416ba73a9169101b2cd7cc7182a:2:{i:0;s:21:\"usersIDPmnjmanMandiri\";i:1;i:33;}'
+    'location_peminjamanmandiri_id' => '83b2b1f1141321217bdeab15888672498246506af17ff4be7f43ba0263ea8564a:2:{i:0;s:29:\"location_peminjamanmandiri_id\";i:1;s:3:\"473\";}'
+    'location_detail_peminjamanmandiri' => '132071fb73842df63024a0530c31f1133dfedb72324f24e548e668286a24ea12a:2:{i:0;s:33:\"location_detail_peminjamanmandiri\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    'backendSession' => 'b5ot72tvf6ahj6mm84u4gca866'
+    'keanggotaanSession' => '2eguoii9tb4lvjdhpipp1cu3c6'
+    '_OpacInlislite' => '0c5d92cd2a1803289ae270c6f0ae9e99c080695bf7538015be79e5f594004ca5a:2:{i:0;s:14:\"_OpacInlislite\";i:1;s:32:\"Ocgf8hhyyLVSrR5jmOdVZnQdgpLnehDG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inlislite3/opac/bookmark'
+    'RiwayatPencarian' => [
+        0 => [
+            'ip' => '192.168.1.10'
+            'url' => 'http://localhost:8123/inlislite3/opac/pencarian-lanjut?action=pencarianLanjut&bahan=Semua+Jenis+Bahan&bahasa=&action=pencarianLanjut&targetPembaca=&bentukKarya=&katakunci%5B%5D=perempuan&jenis%5B%5D=di+dalam&tag%5B%5D=Judul'
+            'action' => 'pencarianLanjut'
+            'keyword' => 'Judul di dalam = perempuan'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '06-26-2023 10:47:12'
+        ]
+        1 => [
+            'ip' => '192.168.1.10'
+            'url' => 'http://localhost:8123/inlislite3/opac/pencarian-lanjut?action=pencarianLanjut&bahan=Semua+Jenis+Bahan&bahasa=&action=pencarianLanjut&targetPembaca=&bentukKarya=&katakunci%5B%5D=perempuan&jenis%5B%5D=di+dalam&tag%5B%5D=Judul'
+            'action' => 'pencarianLanjut'
+            'keyword' => 'Judul di dalam = perempuan'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '06-26-2023 10:47:47'
+        ]
+        2 => [
+            'ip' => '192.168.1.10'
+            'url' => 'http://localhost:8123/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+            'action' => 'pencarianSederhana'
+            'keyword' => 'Judul = perempuan'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '06-26-2023 10:48:01'
+        ]
+        3 => [
+            'ip' => '192.168.1.10'
+            'url' => 'http://localhost:8123/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+            'action' => 'pencarianSederhana'
+            'keyword' => 'Judul = perempuan'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '06-26-2023 10:48:07'
+        ]
+        4 => [
+            'ip' => '192.168.1.10'
+            'url' => 'http://localhost:8123/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+            'action' => 'pencarianSederhana'
+            'keyword' => 'Judul = perempuan'
+            'bahan' => 'Semua Jenis Bahan'
+            'time' => '06-26-2023 10:48:14'
+        ]
+    ]
+    'countSearch' => '1'
+    'dataFacedAuthor' => [
+        0 => [
+            'Author' => 'Tetty Yukesti'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedPublisher' => [
+        0 => [
+            'Publisher' => 'Elex Media Komputindo,'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedPublishLocation' => [
+        0 => [
+            'PublishLocation' => 'Jakarta :'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedPublishYear' => [
+        0 => [
+            'PublishYear' => '2015'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedSubject' => [
+        0 => [
+            'SUBJECT' => 'Wanita - Biografi'
+            'jml' => '1'
+        ]
+    ]
+    'dataFacedBahasa' => [
+        0 => [
+            'bahasa' => 'ind'
+            'jml' => '1'
+        ]
+    ]
+    'catID' => null
+    'catIDmerge' => null
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8123'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_identity=af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B33%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=49376v1gj6c63oh3inoavnrvi5; _csrf=242579b6352e80e8f362b9eaec0e85dfc1d55381db3bc1f116f7202ccb23be81a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mNeX1UVUeQYlcMv038s3BLFBoahEU2n2%22%3B%7D; _backendInlislite=c691086defc13cf8f7175e2400e5121bb60a563c9d1c3fb8c2d3751ebaeda6afa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_backendInlislite%22%3Bi%3A1%3Bs%3A32%3A%22Egag6BEoHyv0OtELbDHikKCNI_5koQkx%22%3B%7D; guestbook=0fa54f94e231330b6508367e298ceaca5c64464c7b545da32692c2f2f1535e8fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22guestbook%22%3Bi%3A1%3Bs%3A32%3A%22ApfdENdk9UsibLK9cfze7djVAmdLXs5W%22%3B%7D; usersSetLocationBukutamu=bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a%3A2%3A%7Bi%3A0%3Bs%3A24%3A%22usersSetLocationBukutamu%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; location_Bukutamu_id=cd550d7931a1b5e8698ce1993423a81b0814640680bf24b965839648e45e8da2a%3A2%3A%7Bi%3A0%3Bs%3A20%3A%22location_Bukutamu_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail=7c034c17a6edbf6de67142042dc2e75b8209b4b6a5ec865266227cf8514c2c82a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22location_detail%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; pengembalianmandiri=0ba2e2aa3e75234a34f169e267c13c6bea54324666dd75692ccccb02032ce554a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22pengembalianmandiri%22%3Bi%3A1%3Bs%3A32%3A%222m9jl8yGerOiL6o0G-NYwxA79ghgwL_K%22%3B%7D; usersSetLocPngblianMandiri=23612243f67b5837260b989a9ad4daf15e7135045011ba52d99bc8184faf8353a%3A2%3A%7Bi%3A0%3Bs%3A26%3A%22usersSetLocPngblianMandiri%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; usersIDPngblianMandiri=7037f043fe2377f6dd8ab9d27d90ce1b3d3f51e35d5272821ca4560bf5288b4ea%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22usersIDPngblianMandiri%22%3Bi%3A1%3Bi%3A33%3B%7D; location_pengembalianmandiri_id=2ae7e23eb0e7634b685e5c1abe17b9a7653b07fe733b2314025ec2f11832453ca%3A2%3A%7Bi%3A0%3Bs%3A31%3A%22location_pengembalianmandiri_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail_pengembalianmandiri=ea44f75bcece8e55ecfcc06a7135bedca8b9324b763c110af9ab3244c118f9f3a%3A2%3A%7Bi%3A0%3Bs%3A35%3A%22location_detail_pengembalianmandiri%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; peminjamanmandiri=42b346d0c0bf715d380a3726882f31fc4006a289f5662f7b58b9ba0fb7a3885ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22peminjamanmandiri%22%3Bi%3A1%3Bs%3A32%3A%22vd_fCJLj_VTBwk7fMyNXKUUedJS6-7yz%22%3B%7D; usersSetLocPmnjmanMandiri=065e40d69c466401dc75589f94fb5f08075801e0688062abf7e6eb9ab99e33ffa%3A2%3A%7Bi%3A0%3Bs%3A25%3A%22usersSetLocPmnjmanMandiri%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; usersIDPmnjmanMandiri=bc09e52d8ee485a6c264d1701382fe3df40df3416ba73a9169101b2cd7cc7182a%3A2%3A%7Bi%3A0%3Bs%3A21%3A%22usersIDPmnjmanMandiri%22%3Bi%3A1%3Bi%3A33%3B%7D; location_peminjamanmandiri_id=83b2b1f1141321217bdeab15888672498246506af17ff4be7f43ba0263ea8564a%3A2%3A%7Bi%3A0%3Bs%3A29%3A%22location_peminjamanmandiri_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail_peminjamanmandiri=132071fb73842df63024a0530c31f1133dfedb72324f24e548e668286a24ea12a%3A2%3A%7Bi%3A0%3Bs%3A33%3A%22location_detail_peminjamanmandiri%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; backendSession=b5ot72tvf6ahj6mm84u4gca866; keanggotaanSession=2eguoii9tb4lvjdhpipp1cu3c6; _OpacInlislite=0c5d92cd2a1803289ae270c6f0ae9e99c080695bf7538015be79e5f594004ca5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_OpacInlislite%22%3Bi%3A1%3Bs%3A32%3A%22Ocgf8hhyyLVSrR5jmOdVZnQdgpLnehDG%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 8123</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8123'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/opac/index.php'
+    'REMOTE_PORT' => '54344'
+    'REDIRECT_QUERY_STRING' => 'action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'REDIRECT_URL' => 'http://localhost:8123/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'REQUEST_URI' => '/inlislite3/opac/search/index?action=pencarianSederhana&katakunci=perempuan&ruas=Judul&bahan=Semua+Jenis+Bahan'
+    'SCRIPT_NAME' => '/inlislite3/opac/index.php'
+    'PHP_SELF' => '/inlislite3/opac/index.php'
+    'REQUEST_TIME_FLOAT' => 1687751293.91
+    'REQUEST_TIME' => 1687751293
+]
+2023-07-24 17:02:39 [192.168.1.184][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.184
+    in C:\xampp\htdocs\inlislite3\opac\views\layouts\main-sederhana-search.php:307
+    in C:\xampp\htdocs\inlislite3\opac\controllers\SearchController.php:889
+2023-07-24 17:02:38 [192.168.1.184][-][-][info][application] $_POST = [
+    'catID' => null
+]
+
+$_COOKIE = [
+    '_identity' => 'af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a:2:{i:0;s:9:\"_identity\";i:1;s:17:\"[33,null,2592000]\";}'
+    'PHPSESSID' => '1l9a0i2umpp2dmgnl1v78nr4h1'
+    'guestbook' => '8ba51ec114fc3ecc19fec796fbf4303df96e62541f4476e6cc92fdbe65537feaa:2:{i:0;s:9:\"guestbook\";i:1;s:32:\"6xICKOXFmiYx67lRVDGnvVgEgIox2SsY\";}'
+    'usersSetLocationBukutamu' => 'bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a:2:{i:0;s:24:\"usersSetLocationBukutamu\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'location_Bukutamu_id' => 'cd550d7931a1b5e8698ce1993423a81b0814640680bf24b965839648e45e8da2a:2:{i:0;s:20:\"location_Bukutamu_id\";i:1;s:3:\"473\";}'
+    'location_detail' => '7c034c17a6edbf6de67142042dc2e75b8209b4b6a5ec865266227cf8514c2c82a:2:{i:0;s:15:\"location_detail\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    '_csrf' => 'fcca1962d0813f4eeba285e7a32e1b6d9f555275f10d4a5b9e3e755c352e089da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1FL2U4oOegBV7XwWIoBBBUIEP7p_IJTb\";}'
+    'keanggotaanSession' => 'hdtr7h27qcnl4iukumi63rgej7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'catID' => null
+    'catIDmerge' => null
+    '__returnUrl' => '/inlislite3/opac/search'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '192.168.1.100:8123'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://192.168.1.100:8123/inlislite3/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B33%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=1l9a0i2umpp2dmgnl1v78nr4h1; guestbook=8ba51ec114fc3ecc19fec796fbf4303df96e62541f4476e6cc92fdbe65537feaa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22guestbook%22%3Bi%3A1%3Bs%3A32%3A%226xICKOXFmiYx67lRVDGnvVgEgIox2SsY%22%3B%7D; usersSetLocationBukutamu=bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a%3A2%3A%7Bi%3A0%3Bs%3A24%3A%22usersSetLocationBukutamu%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; location_Bukutamu_id=cd550d7931a1b5e8698ce1993423a81b0814640680bf24b965839648e45e8da2a%3A2%3A%7Bi%3A0%3Bs%3A20%3A%22location_Bukutamu_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail=7c034c17a6edbf6de67142042dc2e75b8209b4b6a5ec865266227cf8514c2c82a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22location_detail%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; _csrf=fcca1962d0813f4eeba285e7a32e1b6d9f555275f10d4a5b9e3e755c352e089da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221FL2U4oOegBV7XwWIoBBBUIEP7p_IJTb%22%3B%7D; keanggotaanSession=hdtr7h27qcnl4iukumi63rgej7'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\perpu\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\perpu\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at 192.168.1.100 Port 8123</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => '192.168.1.100'
+    'SERVER_ADDR' => '192.168.1.100'
+    'SERVER_PORT' => '8123'
+    'REMOTE_ADDR' => '192.168.1.184'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/opac/index.php'
+    'REMOTE_PORT' => '51793'
+    'REDIRECT_URL' => 'http://192.168.1.100:8123/inlislite3/opac/search'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/inlislite3/opac/search'
+    'SCRIPT_NAME' => '/inlislite3/opac/index.php'
+    'PHP_SELF' => '/inlislite3/opac/index.php'
+    'REQUEST_TIME_FLOAT' => 1690192958.519
+    'REQUEST_TIME' => 1690192958
+]
+2023-07-24 17:03:24 [192.168.1.184][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.184
+    in C:\xampp\htdocs\inlislite3\opac\views\layouts\main-sederhana-search.php:307
+    in C:\xampp\htdocs\inlislite3\opac\controllers\SearchController.php:889
+2023-07-24 17:03:23 [192.168.1.184][-][-][info][application] $_POST = [
+    'catID' => null
+]
+
+$_COOKIE = [
+    '_identity' => 'af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a:2:{i:0;s:9:\"_identity\";i:1;s:17:\"[33,null,2592000]\";}'
+    'PHPSESSID' => '1l9a0i2umpp2dmgnl1v78nr4h1'
+    'guestbook' => '8ba51ec114fc3ecc19fec796fbf4303df96e62541f4476e6cc92fdbe65537feaa:2:{i:0;s:9:\"guestbook\";i:1;s:32:\"6xICKOXFmiYx67lRVDGnvVgEgIox2SsY\";}'
+    'usersSetLocationBukutamu' => 'bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a:2:{i:0;s:24:\"usersSetLocationBukutamu\";i:1;O:19:\"common\\models\\Users\":11:{s:15:\"currentPassword\";N;s:11:\"newPassword\";N;s:18:\"confirmNewPassword\";N;s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:2:{s:8:\"username\";s:9:\"inlislite\";s:2:\"ID\";i:33;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:2:{s:12:\"beforeInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;O:31:\"yii\\behaviors\\TimestampBehavior\":5:{s:18:\"createdAtAttribute\";s:10:\"created_at\";s:18:\"updatedAtAttribute\";s:10:\"updated_at\";s:5:\"value\";N;s:10:\"attributes\";a:2:{s:12:\"beforeInsert\";a:2:{i:0;s:10:\"created_at\";i:1;s:10:\"updated_at\";}s:12:\"beforeUpdate\";s:10:\"updated_at\";}s:5:\"owner\";r:3;}i:1;s:18:\"evaluateAttributes\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:21;i:1;s:18:\"evaluateAttributes\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:1:{i:0;r:21;}}}'
+    'location_Bukutamu_id' => 'cd550d7931a1b5e8698ce1993423a81b0814640680bf24b965839648e45e8da2a:2:{i:0;s:20:\"location_Bukutamu_id\";i:1;s:3:\"473\";}'
+    'location_detail' => '7c034c17a6edbf6de67142042dc2e75b8209b4b6a5ec865266227cf8514c2c82a:2:{i:0;s:15:\"location_detail\";i:1;a:4:{s:4:\"Name\";s:23:\"MTs Negeri 1 Muara Enim\";s:2:\"ID\";s:1:\"1\";s:4:\"Code\";s:36:\"Perpustakaan MTs Negeri 1 Muara Enim\";s:7:\"Address\";s:82:\"Jl. Jendral Bambang Utoyo No. 35 Kelurahan Pasar III Muara Enim - Sumatera Selatan\";}}'
+    '_csrf' => 'fcca1962d0813f4eeba285e7a32e1b6d9f555275f10d4a5b9e3e755c352e089da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1FL2U4oOegBV7XwWIoBBBUIEP7p_IJTb\";}'
+    'keanggotaanSession' => 'hdtr7h27qcnl4iukumi63rgej7'
+    '_OpacInlislite' => '0806cdf8329299f6258e1269a91a229cbc9ee00f60de7fa4eae47cdda1e56591a:2:{i:0;s:14:\"_OpacInlislite\";i:1;s:32:\"H2p2ThKQgeF6MhBlMaox7jQi7EoUZe9G\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'catID' => null
+    'catIDmerge' => null
+    '__returnUrl' => '/inlislite3/opac/search'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '192.168.1.100:8123'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=af3e2a0e951dec577795a0c5ffd91cd682a11d709a13aa959f261807f7b4af33a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B33%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=1l9a0i2umpp2dmgnl1v78nr4h1; guestbook=8ba51ec114fc3ecc19fec796fbf4303df96e62541f4476e6cc92fdbe65537feaa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22guestbook%22%3Bi%3A1%3Bs%3A32%3A%226xICKOXFmiYx67lRVDGnvVgEgIox2SsY%22%3B%7D; usersSetLocationBukutamu=bc0942090f1aff1b9129a7677cae076a204fd96bcc618ee16d3b510acf0f23e4a%3A2%3A%7Bi%3A0%3Bs%3A24%3A%22usersSetLocationBukutamu%22%3Bi%3A1%3BO%3A19%3A%22common%5Cmodels%5CUsers%22%3A11%3A%7Bs%3A15%3A%22currentPassword%22%3BN%3Bs%3A11%3A%22newPassword%22%3BN%3Bs%3A18%3A%22confirmNewPassword%22%3BN%3Bs%3A36%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_attributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A39%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_oldAttributes%22%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A9%3A%22inlislite%22%3Bs%3A2%3A%22ID%22%3Bi%3A33%3B%7Ds%3A33%3A%22%00yii%5Cdb%5CBaseActiveRecord%00_related%22%3Ba%3A0%3A%7B%7Ds%3A23%3A%22%00yii%5Cbase%5CModel%00_errors%22%3BN%3Bs%3A27%3A%22%00yii%5Cbase%5CModel%00_validators%22%3BN%3Bs%3A25%3A%22%00yii%5Cbase%5CModel%00_scenario%22%3Bs%3A7%3A%22default%22%3Bs%3A27%3A%22%00yii%5Cbase%5CComponent%00_events%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3BO%3A31%3A%22yii%5Cbehaviors%5CTimestampBehavior%22%3A5%3A%7Bs%3A18%3A%22createdAtAttribute%22%3Bs%3A10%3A%22created_at%22%3Bs%3A18%3A%22updatedAtAttribute%22%3Bs%3A10%3A%22updated_at%22%3Bs%3A5%3A%22value%22%3BN%3Bs%3A10%3A%22attributes%22%3Ba%3A2%3A%7Bs%3A12%3A%22beforeInsert%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22created_at%22%3Bi%3A1%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A12%3A%22beforeUpdate%22%3Bs%3A10%3A%22updated_at%22%3B%7Ds%3A5%3A%22owner%22%3Br%3A3%3B%7Di%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7Ds%3A12%3A%22beforeUpdate%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Br%3A21%3Bi%3A1%3Bs%3A18%3A%22evaluateAttributes%22%3B%7Di%3A1%3BN%3B%7D%7D%7Ds%3A30%3A%22%00yii%5Cbase%5CComponent%00_behaviors%22%3Ba%3A1%3A%7Bi%3A0%3Br%3A21%3B%7D%7D%7D; location_Bukutamu_id=cd550d7931a1b5e8698ce1993423a81b0814640680bf24b965839648e45e8da2a%3A2%3A%7Bi%3A0%3Bs%3A20%3A%22location_Bukutamu_id%22%3Bi%3A1%3Bs%3A3%3A%22473%22%3B%7D; location_detail=7c034c17a6edbf6de67142042dc2e75b8209b4b6a5ec865266227cf8514c2c82a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22location_detail%22%3Bi%3A1%3Ba%3A4%3A%7Bs%3A4%3A%22Name%22%3Bs%3A23%3A%22MTs+Negeri+1+Muara+Enim%22%3Bs%3A2%3A%22ID%22%3Bs%3A1%3A%221%22%3Bs%3A4%3A%22Code%22%3Bs%3A36%3A%22Perpustakaan+MTs+Negeri+1+Muara+Enim%22%3Bs%3A7%3A%22Address%22%3Bs%3A82%3A%22Jl.+Jendral+Bambang+Utoyo+No.+35+Kelurahan+Pasar+III+Muara+Enim+-+Sumatera+Selatan%22%3B%7D%7D; _csrf=fcca1962d0813f4eeba285e7a32e1b6d9f555275f10d4a5b9e3e755c352e089da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221FL2U4oOegBV7XwWIoBBBUIEP7p_IJTb%22%3B%7D; keanggotaanSession=hdtr7h27qcnl4iukumi63rgej7; _OpacInlislite=0806cdf8329299f6258e1269a91a229cbc9ee00f60de7fa4eae47cdda1e56591a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_OpacInlislite%22%3Bi%3A1%3Bs%3A32%3A%22H2p2ThKQgeF6MhBlMaox7jQi7EoUZe9G%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\perpu\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\perpu\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at 192.168.1.100 Port 8123</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => '192.168.1.100'
+    'SERVER_ADDR' => '192.168.1.100'
+    'SERVER_PORT' => '8123'
+    'REMOTE_ADDR' => '192.168.1.184'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/opac/index.php'
+    'REMOTE_PORT' => '51821'
+    'REDIRECT_URL' => 'http://192.168.1.100:8123/inlislite3/opac/search'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/inlislite3/opac/search'
+    'SCRIPT_NAME' => '/inlislite3/opac/index.php'
+    'PHP_SELF' => '/inlislite3/opac/index.php'
+    'REQUEST_TIME_FLOAT' => 1690193003.324
+    'REQUEST_TIME' => 1690193003
+]
